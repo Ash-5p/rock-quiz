@@ -1,2 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=RocknRoll+One&display=swap');
 /* Google Fonts import */
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Global style */
+
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #322b2bd4, #473535d4, #693c3cd4);
+    /* Borrowed from Blurty images source code */
+    color: white;
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Header */
+header {
+    padding: 0 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+#logo {
+    height: 100px;
+    margin-top: 5px;
+}
+
+/* Main Game Area */
+#game-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    margin: 10px 20px;
+    height: 70vh;
+    background-image: linear-gradient(to top, #322b2bd4, #473835d4, #694f3cd4, #86453ad4, #ab2d26d4, #d8290ad4);
+    border-radius: 30px;
+    box-shadow: black 2px 2px 2px 2px;
+}
+
+/* Home Screen */
+#home .btn {
+    height: 60px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: solid 3px white;
+    color: white;
+    background-color:#322b2bd4;
+    font-size: 1.5em;
+    font-family: inherit;
+    height: 40%;
+    max-height: 150px;
+}
+
+#home .btn:hover {
+    background-color: #d8290ad4;
+}
+
+/* Footer */
+#socials {
+    height: 60px;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom: 0;
+}
+
+#socials li {
+    list-style: none;
+}
