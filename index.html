@@ -15,11 +15,32 @@
 
     </header>
     <main>
-        <!-- Home Screen -->
-        <div id="home">
-            <div id="game-area">
-                <button id="play-btn" class="btn">Play</button>
-                <button id="htp-btn" class="btn">How to Play</button>
+        <!-- Game Area -->
+        <div class="game-area">
+            <!-- Home Screen -->
+            <div class="home">
+                <button id="play-btn" class="btn home-btn">Play</button>
+                <button id="htp-btn" class="btn home-btn">How to Play</button>
+            </div>
+
+            <!-- How to Play Screen -->
+            <div class="how-to hide">
+                <button id="back-btn" class="btn">Back</button>
+            </div>
+
+            <!-- Question Area -->
+            <div class="question hide">
+                <h2>Question</h2>
+                <!-- This div is for image questions -->
+                <img src="assets/images/questions/">
+            </div>
+
+            <!-- Answer Area -->
+            <div class="answer hide">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
             </div>
         </div>
 
