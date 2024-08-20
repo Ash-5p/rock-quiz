@@ -48,11 +48,18 @@ header {
     background-image: linear-gradient(to top, #322b2bd4, #473835d4, #694f3cd4, #86453ad4, #ab2d26d4, #d8290ad4);
     border-radius: 30px;
     box-shadow: black 2px 2px 2px 2px;
+    max-width: 1024px;
+    width: 90%;
 }
 
 /* Home Screen */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #home .btn {
-    height: 60px;
     margin: 10px 0;
     border-radius: 5px;
     border: solid 3px white;
@@ -62,6 +69,7 @@ header {
     font-family: inherit;
     height: 40%;
     max-height: 150px;
+    max-width: 425px;
 }
 
 #home .btn:hover {
@@ -69,11 +77,23 @@ header {
 }
 
 /* Footer */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+}
+
 #socials {
     height: 60px;
     margin: 10px 0 0 0;
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     position: relative;
     bottom: 0;
 }
@@ -81,3 +101,32 @@ header {
 #socials li {
     list-style: none;
 }
+
+/* Media Queries */
+
+/* This media query changes the footer from relative to fixed on screens larger than 600px.
+    This prevents the social links from sitting on top of the game area on short devices. */
+@media screen and (min-height:600px) {
+        
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+
+/* Screens wider than 425px */
+@media screen and (min-width:425px) {
+        
+    #home .btn {
+        width: 350px;
+        max-width: 500px;
+        align-self: center;
+    }
+}
+
+/* Screens wider than 1024px */
+    @media screen and (min-width:1024px) {
+        
+        
+    }
