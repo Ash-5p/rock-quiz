@@ -25,7 +25,7 @@ body {
     font-style: normal;
 }
 
-.hide {
+.game-area .hide {
     display: none;
 }
 
