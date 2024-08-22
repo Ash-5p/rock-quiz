@@ -63,7 +63,7 @@ header {
 /* Main Game Area */
 .game-area {
     
-    padding: 30px;
+    padding: 20px;
     margin: 10px 20px;
     height: 70vh;
     background-image: linear-gradient(to top, #322b2bd4, #473835d4, #694f3cd4, #86453ad4, #ab2d26d4, #d8290ad4);
@@ -105,6 +105,35 @@ header {
     height: 45vh;
 }
 
+/* Question Area */
+
+.img-box {
+    display: flex;
+    height: 20vh;
+    max-height: 145px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.img-box>img {
+    border-radius: 10px;
+    
+}
+
+/* Answer Area */
+
+.answers {
+    display: flex;
+    flex-flow: row wrap;
+    height: 10vh;
+    justify-content: center;
+}
+
+.ans-btn {
+    font-size: 1em;
+    margin: 1px;
+    width: 45%;
+}
 
 /* Footer */
 footer {
