@@ -25,8 +25,27 @@ body {
     font-style: normal;
 }
 
+li {
+    padding: 5px;
+}
+
+h3 {
+    font-size: 1em;
+}
+
 .game-area .hide {
     display: none;
+}
+
+.btn {
+    margin: 10px;
+    padding: 2px 20px;
+    border-radius: 5px;
+    border: solid 3px white;
+    color: white;
+    background-color: #322b2bd4;
+    font-size: 1.5em;
+    font-family: inherit;
 }
 
 /* Header */
@@ -76,6 +95,16 @@ header {
     max-height: 150px;
     max-width: 425px;
 }
+
+/* How to Play Screen */
+
+.how-to ul {
+    font-size: 1em;
+    padding: 5px;
+    overflow: scroll;
+    height: 45vh;
+}
+
 
 /* Footer */
 footer {
