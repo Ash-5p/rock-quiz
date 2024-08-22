@@ -5,6 +5,8 @@ let gameArea = document.getElementsByClassName('game-area')[0];
 let questionArea = document.getElementsByClassName('question')[0];
 let answerArea = document.getElementsByClassName('answers')[0];
 let menuButtons = document.getElementsByClassName('menu-btn');
+let timer = document.getElementById("timer")
+let oldScore = document.getElementById("score")
 
 //Get menu button elements and add event listeners
 for (let menuButton of menuButtons) {
@@ -29,7 +31,10 @@ function menuControls(button) {
     }
 }
 
-startGame()
+// function startGame() {
+//     shuffleQuestions();
+//     startTimer();
+// }
 
 shuffleQuestions()
 
@@ -39,6 +44,11 @@ isCorrect()
 
 isIncorrect()
 
-timer()
+startTimer()
 
-scoreTracker()
+// scoreTracker() {
+//     if (isCorrect()) {
+//         score++;
+//         oldScore.textContent = "Score: "+ score;
+//     }
+// }
