@@ -29,7 +29,7 @@ function menuControls(button) {
     }
 }
 
-function startGame()
+startGame()
 
 shuffleQuestions()
 

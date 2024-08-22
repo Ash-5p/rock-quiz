@@ -56,20 +56,28 @@ header {
 }
 
 #logo {
-    height: 100px;
+    height: 75px;
     margin-top: 5px;
 }
 
 /* Main Game Area */
 .game-area {
-    
-    padding: 20px;
+
+    padding: 10px;
     margin: 10px 20px;
-    height: 70vh;
+    height: 75vh;
     background-image: linear-gradient(to top, #322b2bd4, #473835d4, #694f3cd4, #86453ad4, #ab2d26d4, #d8290ad4);
     border-radius: 30px;
     box-shadow: black 2px 2px 2px 2px;
     max-width: 1024px;
+    position: relative;
+}
+
+#score {
+    position: absolute;
+    bottom: 3px;
+    text-align: center;
+    width: 97.5%;
 }
 
 /* Home Screen */
@@ -117,7 +125,18 @@ header {
 
 .img-box>img {
     border-radius: 10px;
-    
+
+}
+
+#timer {
+    text-align: center;
+    background-color: white;
+    color: #322b2bd4;
+    font-family: "New Rocker", sans-serif;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 30px;
+    margin: auto;
 }
 
 /* Answer Area */
@@ -163,10 +182,17 @@ footer a {
 
 /* Media Queries */
 
-/* This media query changes the footer from relative to fixed on screens larger than 600px.
-    This prevents the social links from sitting on top of the game area on short devices. */
 @media screen and (min-height:600px) {
 
+    #logo {
+        height: 100px;
+    }
+}
+
+@media screen and (min-height:730px) {
+
+    /* This media query changes the footer from relative to fixed on screens larger than 730px.
+    This prevents the social links from sitting on top of the game area on short devices. */
     footer {
         position: fixed;
         bottom: 0;
@@ -177,7 +203,7 @@ footer a {
 /* Screens wider than 425px */
 @media screen and (min-width:425px) {
 
-   .home-btn {
+    .home-btn {
         width: 350px;
         max-width: 500px;
         align-self: center;
