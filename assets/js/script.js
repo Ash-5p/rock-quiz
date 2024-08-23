@@ -7,6 +7,10 @@ let answerArea = document.getElementsByClassName('answers')[0];
 let menuButtons = document.getElementsByClassName('menu-btn');
 let timer = document.getElementById("timer")
 let oldScore = document.getElementById("score")
+let timeLeft = 20; //Game left in seconds
+let timerInterval
+let score = 0;
+let currentQuestionIndex = 0;
 
 //Get menu button elements and add event listeners
 for (let menuButton of menuButtons) {
@@ -25,18 +29,27 @@ function menuControls(button) {
         homeScreen.classList.remove('hide');
         howTo.classList.add('hide');
     } else if (button.id === "play-btn") {
-        homeScreen.classList.add('hide');
-        questionArea.classList.remove('hide');
-        answerArea.classList.remove('hide');    
+        startGame();  
     }
 }
 
-// function startGame() {
-//     shuffleQuestions();
-//     startTimer();
-// }
+/**
+ * Main fuction to start the game
+ */
+function startGame() {
+    homeScreen.classList.add('hide');
+    questionArea.classList.remove('hide');
+    answerArea.classList.remove('hide');
+    oldScore = 0;
+    timeLeft = 20;
+    currentQuestionIndex = 0;
+    oldScore.textContent = `Score: ${score}`;
+    startTimer();
+ }
 
-shuffleQuestions()
+shuffleQuestions() {
+    gameQuestions
+ }
 
 checkAnswer()
 
@@ -44,7 +57,18 @@ isCorrect()
 
 isIncorrect()
 
-startTimer()
+function startTimer() {
+    timer.textContent = timeLeft;
+    timerInterval = setInterval(() => {
+        timeLeft--;
+        timer.textContent = timeLeft;
+        if (timeLeft <= 0) {
+            clearInterval(timerInterval);
+            isIncorrect();
+            nextQuestion();
+        }
+    }, 1000)
+}
 
 // scoreTracker() {
 //     if (isCorrect()) {
