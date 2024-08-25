@@ -1,4 +1,4 @@
-let gameQuestions = [
+const gameQuestions = [
     {
         question: "Q. Which famous rock legend is known for playing the guitar bellow?",
         imageSrc: 'assets/images/questions/cloud-guitar.webp',
