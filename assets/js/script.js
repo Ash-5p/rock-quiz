@@ -45,17 +45,35 @@ function startGame() {
     currentQuestionIndex = 0;
     oldScore.textContent = `Score: ${score}`;
     startTimer();
+    shuffleQuestions();
  }
 
-shuffleQuestions() {
-    gameQuestions
- }
+// shuffleQuestions() {
+//     let currentIndex = gameQuestions.length;
+//     while (currentIndex != 0) {
+//         let randomIndex = Math.floor(Math.random() * currentIndex):
+//         currentIndex--;
+//     } 
+//  }
+
+//  showQuestion() {
+//     questionArea.firstChild.textContent = shuffleQuestions(question.value)
+
+//  }
+ 
+// function nextQuestion() {
+//     shuffleQuestions()
+
+// }
+
+
 
 checkAnswer()
 
 isCorrect()
 
 isIncorrect()
+
 
 function startTimer() {
     timer.textContent = timeLeft;
