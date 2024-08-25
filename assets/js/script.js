@@ -1,15 +1,16 @@
 //Global Variables
-let homeScreen = document.getElementsByClassName('home')[0]; //Homescreen
-let howTo = document.getElementsByClassName('how-to')[0]; //How to screen
-let gameArea = document.getElementsByClassName('game-area')[0]; //Game area div
-let questionArea = document.getElementsByClassName('question')[0]; // Question div
-let answerArea = document.getElementsByClassName('answers')[0]; // Answer div
-let menuButtons = document.getElementsByClassName('menu-btn'); //Menu buttons
-let timer = document.getElementById("timer") //Timer display
+const homeScreen = document.getElementsByClassName('home')[0]; //Homescreen
+const howTo = document.getElementsByClassName('how-to')[0]; //How to screen
+const gameArea = document.getElementsByClassName('game-area')[0]; //Game area div
+const questionArea = document.getElementsByClassName('question')[0]; // Question div
+const questionElement = questionArea.children[0]; //Question text
+const imageBox = document.getElementsByClassName('img-box')[0]; //Image
+const answerArea = document.getElementsByClassName('answers')[0]; // Answer div
+const menuButtons = document.getElementsByClassName('menu-btn'); //Menu buttons
+const timer = document.getElementById("timer") //Timer display
 let oldScore = document.getElementById("score") // Score display
 let timeLeft = 20; //Game time left in seconds
 let timerInterval
-let score = 0;
 
 let shuffleQuestions, currentQuestionIndex;
 
@@ -45,11 +46,10 @@ function startGame() {
     homeScreen.classList.add('hide');
     questionArea.classList.remove('hide');
     answerArea.classList.remove('hide');
-    oldScore = 0;
     timeLeft = 20;
     shuffleQuestions = gameQuestions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
-    // oldScore.textContent = `Score: ${score}`;
+    nextQuestion();
     startTimer();
  };
 
@@ -58,7 +58,9 @@ function startGame() {
  };
 
  function showQuestion(gameQuestions) {
-    questionArea.textContent = gameQuestions.question
+    questionElement.textContent = gameQuestions.question;
+    // imageBox.src = gameQuestions.imageSrc;
+
  }
 
  function selectAnswer() {
@@ -78,10 +80,3 @@ function startTimer() {
         };
     }, 1000)
 };
-
-// scoreTracker() {
-//     if (isCorrect()) {
-//         score++;
-//         oldScore.textContent = "Score: "+ score;
-//     }
-// }
