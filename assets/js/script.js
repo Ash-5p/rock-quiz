@@ -81,6 +81,7 @@ function startGame() {
     currentQuestionIndex = 0;
     nextQuestion();
     startTimer();
+    resetScore();
  };
 
  /**
@@ -142,16 +143,18 @@ function selectAnswer() {
  };
 
  /**
-  * Updates player score. Adds timeLeft to current score
+  * Updates player score
   */
 function checkAnswer(correctAnswer, button) {
-    if (correctAnswer) {
-        //Increments and displays score 
-        let scoreNum = Number(score.textContent.substring(7,9));
+    let scoreNum = Number(score.textContent.substring(7,9));
+    if (correctAnswer) { //Adds timeLeft to current score
         score.textContent = `Score: ${timeLeft + scoreNum}`
+    } else { // Subtracts 10 points from current score
+        score.textContent = `Score: ${scoreNum - 10}`
+    }
 }
 
-}
+resetScore = () => (score.textContent = 'Score: 0')
 
  /**
   * Checks wether the answer is correct or incorrect, and adds the corresponding class
