@@ -48,6 +48,10 @@ h3 {
     font-family: inherit;
 }
 
+.btn:hover {
+    border-color: orange;
+}
+
 /* Header */
 header {
     padding: 0 1rem;
@@ -92,10 +96,6 @@ header {
 #play-btn,
 #htp-btn {
     margin: 10px 0;
-    border-radius: 5px;
-    border: solid 3px white;
-    color: white;
-    background-color: #322b2bd4;
     font-size: 1.5em;
     font-family: inherit;
     height: 40%;
@@ -143,6 +143,11 @@ header {
     background-color: rgba(50, 43, 43, .4);
     border-color: rgba(255, 255, 255, 0.4);
     color: rgba(255, 255, 255, 0.4);
+}
+
+/* Prevents the default hover effect for buttons that are assigned the "inactive" class */
+.inactive:hover {
+    border-color: rgba(255, 255, 255, 0.4);
 }
 
 /* Answer Area */

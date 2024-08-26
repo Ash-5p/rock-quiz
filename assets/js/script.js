@@ -38,6 +38,7 @@ function menuControls(button) {
         answerArea.classList.add('hide');
         score.classList.add('hide');
     } else if (button.id === "play-btn") {
+        resetState();
         startGame();  
     }
 }
@@ -58,13 +59,14 @@ function startGame() {
  };
 
  function nextQuestion() {
-    resetState()
-    showQuestion(shuffleQuestions[currentQuestionIndex])
+    resetState();
+    showQuestion(shuffleQuestions[currentQuestionIndex]);
+
  };
 
  function showQuestion(gameQuestions) {
     questionElement.textContent = gameQuestions.question;
-    // imageBox.src = gameQuestions.imageSrc;
+    imageBox.attributes.src = gameQuestions.imageSrc;
     gameQuestions.answers.forEach(answer => {
         const button = document.createElement('button');
         button.innerText = answer.text;
@@ -91,11 +93,38 @@ function resetState() {
     timeLeft = 20;
 };
 
-function selectAnswer() {
-
+function selectAnswer(event) {
+   const selectedButton = event.target;
+   const correct = selectedButton.dataset.correct;
+   nextButton.classList.remove('inactive')
+   Array.from(answerArea.children).forEach(button => {
+    setStatusClass(button, button.dataset.correct);
+   });
  };
 
+ /**
+  * Checks wether the answer is correct or incorrect, and adds the corresponding class
+  */
+ function setStatusClass(element, correct) {
+    clearStatusClass(element) 
+    if (correct) {
+        element.classList.add('correct');
+    } else {
+        element.classList.add('incorrect');
+    };
+ };
 
+ /**
+  * Clears the existing classes of the answer buttons
+  */
+function clearStatusClass (element) {
+    element.classList.remove('correct');
+    element.classList.remove('incorrect');
+}
+
+/**
+ * Controls the in-game countdown timer
+ */
 function startTimer() {
     timer.textContent = timeLeft;
     timerInterval = setInterval(() => {

@@ -88,416 +88,416 @@ const gameQuestions = [
             { text: 'Steal This Album!', correct: false },
             { text: 'Mezmerize', correct: false }
         ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "Q. ",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
     }
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // },
+    // {
+    //     question: "Q. ",
+    //     imageSrc: '',
+    //     answers: [
+    //         { text: '', correct: false },
+    //         { text: '', correct: true },
+    //         { text: '', correct: false },
+    //         { text: '', correct: false }
+    //     ]
+    // }
 
 ] 
