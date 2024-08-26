@@ -90,27 +90,27 @@ const gameQuestions = [
             { text: 'Steal This Album!', correct: false },
             { text: 'Mezmerize', correct: false }
         ]
+    },
+    {
+        question: "Q. Which guitar manufacturer made the original \"SG\" shaped guitar?",
+        imageSrc: 'assets/images/questions/sg-guitar.jpg',
+        answers: [
+            { text: 'Fender', correct: false },
+            { text: 'Gibson', correct: true },
+            { text: 'Gretch', correct: false },
+            { text: 'PRS', correct: false }
+        ]
+    },
+    {
+        question: "Q. ",
+        imageSrc: '',
+        answers: [
+            { text: '', correct: false },
+            { text: '', correct: true },
+            { text: '', correct: false },
+            { text: '', correct: false }
+        ]
     }
-    // {
-    //     question: "Q. ",
-    //     imageSrc: '',
-    //     answers: [
-    //         { text: '', correct: false },
-    //         { text: '', correct: true },
-    //         { text: '', correct: false },
-    //         { text: '', correct: false }
-    //     ]
-    // },
-    // {
-    //     question: "Q. ",
-    //     imageSrc: '',
-    //     answers: [
-    //         { text: '', correct: false },
-    //         { text: '', correct: true },
-    //         { text: '', correct: false },
-    //         { text: '', correct: false }
-    //     ]
-    // },
     // {
     //     question: "Q. ",
     //     imageSrc: '',

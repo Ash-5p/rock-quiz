@@ -2,6 +2,7 @@
 
 //Global Variables
 const homeScreen = document.getElementById('home'); //Homescreen
+const endScreen = document.getElementById('end-screen'); //End screen
 const howTo = document.getElementById('how-to'); //How to screen
 const gameArea = document.getElementById('game-area'); //Game area div
 const questionArea = document.getElementById('question'); // Question div
@@ -14,6 +15,7 @@ const nextButton = document.getElementById('next-btn'); //Next button
 const menuButtons = document.getElementsByClassName('menu-btn'); //Menu buttons
 const timer = document.getElementById("timer"); //Timer display
 let score = document.getElementById("score"); // Score display
+let finalScore = document.getElementById("final-score"); // Final score
 let timeLeft = 20; //Game time left in seconds
 let timerInterval;
 
@@ -114,6 +116,7 @@ function startGame() {
         };
         button.addEventListener('click', selectAnswer);
         answerArea.appendChild(button)
+        endGame(currentQuestionIndex);
     });
  };
 
@@ -146,7 +149,7 @@ function selectAnswer() {
   * Updates player score
   */
 function checkAnswer(correctAnswer, button) {
-    let scoreNum = Number(score.textContent.substring(7,9));
+    let scoreNum = Number(score.textContent.substring(7,10));
     if (correctAnswer) { //Adds timeLeft to current score
         score.textContent = `Score: ${timeLeft + scoreNum}`
     } else { // Subtracts 10 points from current score
@@ -154,6 +157,9 @@ function checkAnswer(correctAnswer, button) {
     }
 }
 
+/**
+ * Resets score back to 0
+ */
 resetScore = () => (score.textContent = 'Score: 0')
 
  /**
@@ -198,6 +204,26 @@ function stopTimer() {
     clearInterval(timerInterval);
 };
 
-// function timeout {
-    
-// }
+function endGame(currentQuestionIndex) {
+    let scoreNum = Number(score.textContent.substring(7,10));
+    if (currentQuestionIndex > 9) {
+        questionArea.classList.add('hide')
+        answerArea.classList.add('hide')
+        score.classList.add('hide')
+        endScreen.classList.remove('hide')
+        finalScore.textContent = scoreNum;
+    }
+}
+
+function timeout() {
+    if (timeLeft <= 0) {
+        nextButton.classList.remove('inactive');
+        for (let answerButton of answerButtons) {
+            if (answerButton.dataset.correct === 'true') {
+                answerButton.classList.add('correct');
+            } else {
+                answerButton.classList.add('incorrect');
+            };
+        };   
+    };
+};
