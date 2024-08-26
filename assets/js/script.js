@@ -102,7 +102,6 @@ function startGame() {
     } else {
         questionImage.alt = 'guitar'; // Adds alt attribute if image question
     };
-    // imageBox.innerHTML = `<img src="${gameQuestions.imageSrc}">`;
     gameQuestions.answers.sort(() => Math.random() - 0.5);
     gameQuestions.answers.forEach(answer => {
         const button = document.createElement('button');
@@ -132,15 +131,27 @@ function resetState() {
 /**
  * Function to manage events when an answer is selected
  */
-function selectAnswer(event) {
+function selectAnswer() {
     stopTimer();
-   const selectedButton = event.target;
-   const correct = selectedButton.dataset.correct;
    nextButton.classList.remove('inactive')
    Array.from(answerArea.children).forEach(button => {
     setStatusClass(button, button.dataset.correct);
    });
+   const correctAnswer = this.dataset.correct === 'true';
+    checkAnswer(correctAnswer, this);
  };
+
+ /**
+  * Updates player score. Adds timeLeft to current score
+  */
+function checkAnswer(correctAnswer, button) {
+    if (correctAnswer) {
+        //Increments and displays score 
+        let scoreNum = Number(score.textContent.substring(7,9));
+        score.textContent = `Score: ${timeLeft + scoreNum}`
+}
+
+}
 
  /**
   * Checks wether the answer is correct or incorrect, and adds the corresponding class
