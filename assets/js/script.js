@@ -69,12 +69,17 @@ function startGame() {
     startTimer();
  };
 
- 
+ /**
+  * Function to move to next question when nextButton is clicked
+  */
  function nextQuestion() {
     resetState();
     showQuestion(shuffleQuestions[currentQuestionIndex]);
  };
 
+ /**
+  * Function to display a random question from gameQuestion array 
+  */
  function showQuestion(gameQuestions) {
     questionElement.textContent = gameQuestions.question;
     imageBox.innerHTML = `<img src="${gameQuestions.imageSrc}">`;
@@ -103,6 +108,9 @@ function resetState() {
     timeLeft = 20;
 };
 
+/**
+ * Function to manage events when an answer is selected
+ */
 function selectAnswer(event) {
     stopTimer();
    const selectedButton = event.target;
@@ -143,7 +151,6 @@ function startTimer() {
         timer.textContent = timeLeft;
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
-            nextQuestion();
         };
     }, 1000)
 };
@@ -155,3 +162,7 @@ function startTimer() {
 function stopTimer() {
     clearInterval(timerInterval);
 };
+
+// function timeout {
+    
+// }
