@@ -139,6 +139,12 @@ header {
     margin: auto;
 }
 
+.inactive {
+    background-color: rgba(50, 43, 43, .4);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+}
+
 /* Answer Area */
 
 .answers {
@@ -198,13 +204,14 @@ footer a {
         display: flex;
     }
 
-    #replay-btn {
+    #home-btn {
         font-size: 16px;
-        margin-bottom: 2px;
+        margin: 0
     }
 
-    #timer {
-        margin-bottom: 5px;
+    #next-btn {
+        font-size: 16px;
+        margin: 0
     }
 
     #logo {

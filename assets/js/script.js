@@ -6,6 +6,8 @@ const questionArea = document.getElementsByClassName('question')[0]; // Question
 const questionElement = questionArea.children[0]; //Question text
 const imageBox = document.getElementsByClassName('img-box')[0]; //Image
 const answerArea = document.getElementsByClassName('answers')[0]; // Answer div
+const answerButtons = document.getElementsByClassName('ans-btn');
+const nextButton = document.getElementById('next-btn');
 const menuButtons = document.getElementsByClassName('menu-btn'); //Menu buttons
 const timer = document.getElementById("timer") //Timer display
 let score = document.getElementById("score") // Score display
@@ -30,10 +32,11 @@ function menuControls(button) {
     } else if (button.id === "back-btn") {
         homeScreen.classList.remove('hide');
         howTo.classList.add('hide');     
-    } else if (button.id === "replay-btn") {
+    } else if (button.id === "home-btn") {
         homeScreen.classList.remove('hide');
         questionArea.classList.add('hide');
         answerArea.classList.add('hide');
+        score.classList.add('hide');
     } else if (button.id === "play-btn") {
         startGame();  
     }
@@ -55,16 +58,40 @@ function startGame() {
  };
 
  function nextQuestion() {
+    resetState()
     showQuestion(shuffleQuestions[currentQuestionIndex])
  };
 
  function showQuestion(gameQuestions) {
     questionElement.textContent = gameQuestions.question;
     // imageBox.src = gameQuestions.imageSrc;
+    gameQuestions.answers.forEach(answer => {
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('btn');
+        button.classList.add('ans-btn');
+        if (answer.correct) {
+            button.dataset.correct = answer.correct
+        };
+        button.addEventListener('click', selectAnswer);
+        answerArea.appendChild(button)
+    });
 
- }
+ };
 
- function selectAnswer() {
+ /**
+  * Resets the state of game area by removing existing buttons and resetting timer interval
+  */
+function resetState() {
+    nextButton.classList.add('inactive');
+    while (answerArea.firstChild) {
+        answerArea.removeChild(answerArea.firstChild);
+    };
+    clearInterval(timerInterval);
+    timeLeft = 20;
+};
+
+function selectAnswer() {
 
  };
 
@@ -76,7 +103,6 @@ function startTimer() {
         timer.textContent = timeLeft;
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
-            isIncorrect();
             nextQuestion();
         };
     }, 1000)
