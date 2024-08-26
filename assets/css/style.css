@@ -65,7 +65,7 @@ header {
 
     padding: 10px;
     margin: 10px 20px;
-    height: 75vh;
+    height: 80vh;
     background-image: linear-gradient(to top, #322b2bd4, #473835d4, #694f3cd4, #86453ad4, #ab2d26d4, #d8290ad4);
     border-radius: 30px;
     box-shadow: black 2px 2px 2px 2px;
@@ -154,6 +154,16 @@ header {
     width: 45%;
 }
 
+.correct {
+    border-color: limegreen;
+    background-color: green;
+}
+
+.incorrect {
+    border-color: orange;
+    background-color: red;
+}
+
 /* Footer */
 footer {
     position: relative;
@@ -182,11 +192,29 @@ footer a {
 
 /* Media Queries */
 
-@media screen and (min-height:600px) {
+@media screen and (max-height:600px) {
+
+    .question > span {
+        display: flex;
+    }
+
+    #replay-btn {
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+
+    #timer {
+        margin-bottom: 5px;
+    }
 
     #logo {
-        height: 100px;
+        height: 65px;
     }
+}
+
+@media screen and (min-height:600px) {
+
+    
 }
 
 @media screen and (min-height:730px) {

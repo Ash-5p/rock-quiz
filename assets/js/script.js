@@ -8,7 +8,7 @@ const imageBox = document.getElementsByClassName('img-box')[0]; //Image
 const answerArea = document.getElementsByClassName('answers')[0]; // Answer div
 const menuButtons = document.getElementsByClassName('menu-btn'); //Menu buttons
 const timer = document.getElementById("timer") //Timer display
-let oldScore = document.getElementById("score") // Score display
+let score = document.getElementById("score") // Score display
 let timeLeft = 20; //Game time left in seconds
 let timerInterval
 
@@ -46,6 +46,7 @@ function startGame() {
     homeScreen.classList.add('hide');
     questionArea.classList.remove('hide');
     answerArea.classList.remove('hide');
+    score.classList.remove('hide');
     timeLeft = 20;
     shuffleQuestions = gameQuestions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;

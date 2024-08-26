@@ -386,7 +386,8 @@ by sending yourself the following command: `!freemedia`.
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
-| [Music Radar](https://cdn.mos.cms.futurecdn.net/XXRptkBUCmWqW6Wysqfm5P-1200-80.jpg.webp) | question | image | prince question |
+| [Music Radar](https://cdn.mos.cms.futurecdn.net/XXRptkBUCmWqW6Wysqfm5P-1200-80.jpg.webp) | question | image | prince question | 
+| [Brian May Guitars](https://shop.brianmayguitars.co.uk/user/special/content/Antique%20Cherry%20b.jpg) | question | image | brian may question |
 | [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
 | [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
 | [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
