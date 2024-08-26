@@ -61,7 +61,7 @@ const gameQuestions = [
     },
     {
         question: "Q. Which famous guitarist is known for playing the guitar below?",
-        imageSrc: 'assets/images/questions/bm-guitar.webp',
+        imageSrc: 'assets/images/questions/bm-guitar.jpg',
         answers: [
             { text: 'Randy Rhoads', correct: false },
             { text: 'Angus Young', correct: false },

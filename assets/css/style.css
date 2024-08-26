@@ -209,6 +209,10 @@ footer a {
         display: flex;
     }
 
+    .img-box img {
+        max-width: 260px;
+    }
+
     #home-btn {
         font-size: 16px;
         margin: 0
@@ -222,11 +226,7 @@ footer a {
     #logo {
         height: 65px;
     }
-}
 
-@media screen and (min-height:600px) {
-
-    
 }
 
 @media screen and (min-height:730px) {

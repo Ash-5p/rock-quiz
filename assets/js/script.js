@@ -16,7 +16,18 @@ let timerInterval
 
 let shuffleQuestions, currentQuestionIndex;
 
-//Get menu button elements and add event listeners
+/**
+ * Event listener for next button
+ */
+nextButton.addEventListener("click", () => {
+    currentQuestionIndex++;
+    nextQuestion()
+    startTimer();
+})
+
+/**
+ * Get menu button elements and add event listeners
+*/ 
 for (let menuButton of menuButtons) {
     menuButton.addEventListener('click', function () {
         menuControls(menuButton);
@@ -58,15 +69,15 @@ function startGame() {
     startTimer();
  };
 
+ 
  function nextQuestion() {
     resetState();
     showQuestion(shuffleQuestions[currentQuestionIndex]);
-
  };
 
  function showQuestion(gameQuestions) {
     questionElement.textContent = gameQuestions.question;
-    imageBox.attributes.src = gameQuestions.imageSrc;
+    imageBox.innerHTML = `<img src="${gameQuestions.imageSrc}">`;
     gameQuestions.answers.forEach(answer => {
         const button = document.createElement('button');
         button.innerText = answer.text;
@@ -78,7 +89,6 @@ function startGame() {
         button.addEventListener('click', selectAnswer);
         answerArea.appendChild(button)
     });
-
  };
 
  /**
@@ -94,6 +104,7 @@ function resetState() {
 };
 
 function selectAnswer(event) {
+    stopTimer();
    const selectedButton = event.target;
    const correct = selectedButton.dataset.correct;
    nextButton.classList.remove('inactive')
@@ -123,7 +134,7 @@ function clearStatusClass (element) {
 }
 
 /**
- * Controls the in-game countdown timer
+ * Starts the in-game countdown timer
  */
 function startTimer() {
     timer.textContent = timeLeft;
@@ -135,4 +146,12 @@ function startTimer() {
             nextQuestion();
         };
     }, 1000)
+};
+
+/**
+ * Function to stop timer when an answer is selected
+ */
+
+function stopTimer() {
+    clearInterval(timerInterval);
 };
