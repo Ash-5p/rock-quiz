@@ -1,56 +1,70 @@
+/* jshint esversion: 11 */
+
 //Global Variables
-const homeScreen = document.getElementsByClassName('home')[0]; //Homescreen
-const howTo = document.getElementsByClassName('how-to')[0]; //How to screen
-const gameArea = document.getElementsByClassName('game-area')[0]; //Game area div
-const questionArea = document.getElementsByClassName('question')[0]; // Question div
-const questionElement = questionArea.children[0]; //Question text
-const imageBox = document.getElementsByClassName('img-box')[0]; //Image
-const answerArea = document.getElementsByClassName('answers')[0]; // Answer div
-const answerButtons = document.getElementsByClassName('ans-btn');
-const nextButton = document.getElementById('next-btn');
+const homeScreen = document.getElementById('home'); //Homescreen
+const howTo = document.getElementById('how-to'); //How to screen
+const gameArea = document.getElementById('game-area'); //Game area div
+const questionArea = document.getElementById('question'); // Question div
+const questionElement = questionArea.firstElementChild; //Question text
+const imageBox = document.getElementById('img-box'); //Image constainer
+const questionImage = imageBox.firstElementChild; // Question image
+const answerArea = document.getElementById('answers'); // Answer div
+const answerButtons = document.getElementsByClassName('ans-btn'); //Answer buttons
+const nextButton = document.getElementById('next-btn'); //Next button
 const menuButtons = document.getElementsByClassName('menu-btn'); //Menu buttons
-const timer = document.getElementById("timer") //Timer display
-let score = document.getElementById("score") // Score display
+const timer = document.getElementById("timer"); //Timer display
+let score = document.getElementById("score"); // Score display
 let timeLeft = 20; //Game time left in seconds
-let timerInterval
+let timerInterval;
 
 let shuffleQuestions, currentQuestionIndex;
 
-/**
- * Event listener for next button
- */
-nextButton.addEventListener("click", () => {
-    currentQuestionIndex++;
-    nextQuestion()
-    startTimer();
-})
-
-/**
- * Get menu button elements and add event listeners
-*/ 
+// Add event listeners to all menu buttons
 for (let menuButton of menuButtons) {
-    menuButton.addEventListener('click', function () {
-        menuControls(menuButton);
-    });
+    triggerMenuBtns(menuButton);
 }
 
-//Controls menu buttons
-function menuControls(button) {
-    // Check the id of the button that was clicked
-    if(button.id === "htp-btn") {
-        homeScreen.classList.add('hide');
-        howTo.classList.remove('hide');
-    } else if (button.id === "back-btn") {
-        homeScreen.classList.remove('hide');
-        howTo.classList.add('hide');     
-    } else if (button.id === "home-btn") {
-        homeScreen.classList.remove('hide');
-        questionArea.classList.add('hide');
-        answerArea.classList.add('hide');
-        score.classList.add('hide');
-    } else if (button.id === "play-btn") {
-        resetState();
-        startGame();  
+// Handle adding event listeners to each menu button
+function triggerMenuBtns(btn) {
+    btn.addEventListener("click", handleMenuClick);
+}
+
+// Handler function that deals with button clicks
+function handleMenuClick(e) {
+    const btn = e.currentTarget;  // the clicked button
+    menuControls(btn);
+}
+
+
+// Controls menu buttons depending on their id
+function menuControls(btn) {
+    switch (btn.id) {
+        case "htp-btn": //When "how to play" button is clicked
+            homeScreen.classList.add('hide');
+            howTo.classList.remove('hide');
+            break;
+        case "back-btn": //When "back" button is clicked
+            homeScreen.classList.remove('hide');
+            howTo.classList.add('hide');
+            break;
+        case "home-btn": //When "home" button is clicked
+            homeScreen.classList.remove('hide');
+            questionArea.classList.add('hide');
+            answerArea.classList.add('hide');
+            score.classList.add('hide');
+            break;
+        case "next-btn": //When "next" button is clicked
+            currentQuestionIndex++;
+            nextQuestion();
+            startTimer();
+            break;   
+        case "play-btn": //When "play" button is clicked
+            resetState();
+            startGame();
+            break;
+        default:
+            console.warn("Unhandled button ID: ", btn.id);
+            break;
     }
 }
 
@@ -82,7 +96,14 @@ function startGame() {
   */
  function showQuestion(gameQuestions) {
     questionElement.textContent = gameQuestions.question;
-    imageBox.innerHTML = `<img src="${gameQuestions.imageSrc}">`;
+    questionImage.src = gameQuestions.imageSrc;
+    if (gameQuestions.imageSrc === '') { // Removes alt attribute for non-image questions
+        questionImage.alt = ''; 
+    } else {
+        questionImage.alt = 'guitar'; // Adds alt attribute if image question
+    };
+    // imageBox.innerHTML = `<img src="${gameQuestions.imageSrc}">`;
+    gameQuestions.answers.sort(() => Math.random() - 0.5);
     gameQuestions.answers.forEach(answer => {
         const button = document.createElement('button');
         button.innerText = answer.text;

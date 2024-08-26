@@ -33,7 +33,7 @@ h3 {
     font-size: 1em;
 }
 
-.game-area .hide {
+#game-area .hide {
     display: none;
 }
 
@@ -65,7 +65,7 @@ header {
 }
 
 /* Main Game Area */
-.game-area {
+#game-area {
 
     padding: 10px;
     margin: 10px 20px;
@@ -109,8 +109,9 @@ header {
 .how-to ul {
     font-size: 1em;
     padding: 5px;
-    overflow: scroll;
-    height: 45vh;
+    overflow-y: auto;
+    max-height: 45vh;
+    list-style: none;
 }
 
 /* Question Area */
@@ -152,7 +153,7 @@ header {
 
 /* Answer Area */
 
-.answers {
+#answers {
     display: flex;
     flex-flow: row wrap;
     height: 10vh;
@@ -205,7 +206,7 @@ footer a {
 
 @media screen and (max-height:600px) {
 
-    .question > span {
+    .question > div {
         display: flex;
     }
 
@@ -253,7 +254,7 @@ footer a {
 /* Screens wider than 1044px */
 @media screen and (min-width:1044px) {
 
-    .game-area {
+    #game-area {
         margin: 10px auto;
     }
 }

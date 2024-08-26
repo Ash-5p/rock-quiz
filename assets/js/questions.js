@@ -1,6 +1,8 @@
+/* jshint esversion: 11 */
+
 const gameQuestions = [
     {
-        question: "Q. Which famous rock legend is known for playing the guitar bellow?",
+        question: "Q. Which famous rock legend is known for playing the guitar below?",
         imageSrc: 'assets/images/questions/cloud-guitar.webp',
         answers: [
             { text: 'Prince', correct: true },

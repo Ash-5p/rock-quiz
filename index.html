@@ -16,15 +16,15 @@
     </header>
     <main>
         <!-- Game Area -->
-        <div class="game-area">
+        <section id="game-area">
             <!-- Home Screen -->
-            <div class="home">
+            <div id="home" class="home">
                 <button id="play-btn" class="btn menu-btn">Play</button>
                 <button id="htp-btn" class="btn menu-btn">How to Play</button>
             </div>
 
             <!-- How to Play Screen -->
-            <div class="how-to hide">
+            <div id="how-to" class="how-to hide">
                 <h2>How to Play</h2>
                 <ul>
                     <li>Press the start button to play</li>
@@ -39,28 +39,28 @@
             </div>
 
             <!-- Question Area -->
-            <div class="question hide">
+            <section id="question" class="question hide">
                 <h3>Q. Which famous rock legend is known for playing the guitar bellow?</h3>
-                <span><button id="home-btn" class="btn menu-btn"><i class="fa-solid fa-house"></i></button>
+                <div><button id="home-btn" class="btn menu-btn"><i class="fa-solid fa-house"></i></button>
                     <p id="timer">20</p>
                     <button id="next-btn" class="btn menu-btn inactive"><i class="fa-solid fa-right-long"></i></button>
-                </span>
-                <!-- This div is for image questions -->
-                <div class="img-box">
-                    <img src="assets/images/questions/cloud-guitar.webp" alt="guitar">
                 </div>
-            </div>
+                <!-- This div is for image questions -->
+                <figure id="img-box" class="img-box">
+                    <img id="question-img" src="assets/images/questions/cloud-guitar.webp" alt="guitar">
+                </figure>
+            </section>
 
             <!-- Answer Area -->
-            <div class="answers hide">
+            <section id="answers" class="hide">
                 <button class="btn ans-btn">Answer 1</button>
                 <button class="btn ans-btn">Answer 2</button>
                 <button class="btn ans-btn">Answer 3</button>
                 <button class="btn ans-btn">Answer 4</button>
-            </div>
+            </section>
 
             <p id="score" class="hide">Score: 0</p>
-        </div>
+        </section>
 
     </main>
 
