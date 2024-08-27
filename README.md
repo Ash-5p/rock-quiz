@@ -1,4 +1,4 @@
-# [ROCK QUIZ](https://ash-5p.github.io/rock-quiz)
+# ![image](assets/images/logo.png) (https://ash-5p.github.io/rock-quiz)
 
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Ash-5p/rock-quiz)](https://github.com/Ash-5p/rock-quiz/commits/main)
 [![GitHub last commit](https://img.shields.io/github/last-commit/Ash-5p/rock-quiz)](https://github.com/Ash-5p/rock-quiz/commits/main)
@@ -386,9 +386,10 @@ by sending yourself the following command: `!freemedia`.
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
-| [Music Radar](https://cdn.mos.cms.futurecdn.net/XXRptkBUCmWqW6Wysqfm5P-1200-80.jpg.webp) | question | image | prince question | 
-| [Brian May Guitars](https://shop.brianmayguitars.co.uk/user/special/content/Antique%20Cherry%20b.jpg) | question | image | brian may question |
-| [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
+| [Music Radar](https://cdn.mos.cms.futurecdn.net/XXRptkBUCmWqW6Wysqfm5P-1200-80.jpg.webp) | question | image | cloud guitar question | 
+| [Heritage Auctions](https://dyn1.heritagestatic.com/lf?set=path%5B4%2F7%2F5%2F9%2F4759129%5D%2Csizedata%5B850x600%5D&call=url%5Bfile%3Aproduct.chain%5D) | question | image | axe guitar question |
+| [Brian May Guitars](https://shop.brianmayguitars.co.uk/user/special/content/Antique%20Cherry%20b.jpg) | question | image | BM guitar question |
+| [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages | 
 | [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
 | [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
 | [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
