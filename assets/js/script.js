@@ -89,7 +89,7 @@ function startGame() {
  }
 
  /**
-  * Function to move to next question when nextButton is clicked
+  * Function to call resetState and showQuestion functions
   */
  function nextQuestion() {
     resetState();
@@ -148,7 +148,7 @@ function selectAnswer() {
  }
 
  /**
-  * Updates player score
+  * Updates player score 
   */
 function checkAnswer(correctAnswer, button) {
     scoreNum = Number(score.textContent.substring(7,10));
@@ -232,9 +232,14 @@ function timeout() {
             if (answerButton.dataset.correct === 'true') {
                 answerButton.classList.add('correct');
                 answerButton.disabled = true;
+            } else if (scoreNum < 5) {
+                resetScore();
+                answerButton.classList.add('incorrect');
+                answerButton.disabled = true;
             } else {
                 answerButton.classList.add('incorrect');
                 answerButton.disabled = true;
+                score.textContent = `Score: ${scoreNum - 5}`;
             }
         }
     }
