@@ -176,8 +176,10 @@ function setStatusClass(element, correct) {
     clearStatusClass(element); 
     if (correct) {
         element.classList.add('correct');
+        element.disabled = true;
     } else {
         element.classList.add('incorrect');
+        element.disabled = true;
     }
  }
 
@@ -199,6 +201,7 @@ function startTimer() {
         timer.textContent = timeLeft;
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
+            timeout() // Call the timeout function when the timer runs out
         }
     }, 1000);
 }
@@ -228,8 +231,10 @@ function timeout() {
         for (let answerButton of answerButtons) {
             if (answerButton.dataset.correct === 'true') {
                 answerButton.classList.add('correct');
+                answerButton.disabled = true;
             } else {
                 answerButton.classList.add('incorrect');
+                answerButton.disabled = true;
             }
         }
     }
