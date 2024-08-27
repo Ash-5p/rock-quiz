@@ -15,9 +15,11 @@ const nextButton = document.getElementById('next-btn'); //Next button
 const menuButtons = document.getElementsByClassName('menu-btn'); //Menu buttons
 const timer = document.getElementById("timer"); //Timer display
 let score = document.getElementById("score"); // Score display
+let scoreNum; //Score value
 let finalScore = document.getElementById("final-score"); // Final score
 let timeLeft = 20; //Game time left in seconds
 let timerInterval;
+
 
 let shuffleQuestions, currentQuestionIndex;
 
@@ -79,12 +81,12 @@ function startGame() {
     answerArea.classList.remove('hide');
     score.classList.remove('hide');
     timeLeft = 20;
-    shuffleQuestions = gameQuestions.sort(() => Math.random() - .5);
+    shuffleQuestions = gameQuestions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     nextQuestion();
     startTimer();
     resetScore();
- };
+ }
 
  /**
   * Function to move to next question when nextButton is clicked
@@ -92,7 +94,7 @@ function startGame() {
  function nextQuestion() {
     resetState();
     showQuestion(shuffleQuestions[currentQuestionIndex]);
- };
+ }
 
  /**
   * Function to display a random question from gameQuestion array 
@@ -104,7 +106,7 @@ function startGame() {
         questionImage.alt = ''; 
     } else {
         questionImage.alt = 'guitar'; // Adds alt attribute if image question
-    };
+    }
     gameQuestions.answers.sort(() => Math.random() - 0.5);
     gameQuestions.answers.forEach(answer => {
         const button = document.createElement('button');
@@ -112,13 +114,13 @@ function startGame() {
         button.classList.add('btn');
         button.classList.add('ans-btn');
         if (answer.correct) {
-            button.dataset.correct = answer.correct
-        };
+            button.dataset.correct = answer.correct;
+        }
         button.addEventListener('click', selectAnswer);
-        answerArea.appendChild(button)
+        answerArea.appendChild(button);
         endGame(currentQuestionIndex);
     });
- };
+ }
 
  /**
   * Resets the state of game area by removing existing buttons and resetting timer interval
@@ -127,52 +129,57 @@ function resetState() {
     nextButton.classList.add('inactive');
     while (answerArea.firstChild) {
         answerArea.removeChild(answerArea.firstChild);
-    };
+    }
     clearInterval(timerInterval);
     timeLeft = 20;
-};
+}
 
 /**
  * Function to manage events when an answer is selected
  */
 function selectAnswer() {
     stopTimer();
-   nextButton.classList.remove('inactive')
+   nextButton.classList.remove('inactive');
    Array.from(answerArea.children).forEach(button => {
     setStatusClass(button, button.dataset.correct);
    });
    const correctAnswer = this.dataset.correct === 'true';
     checkAnswer(correctAnswer, this);
- };
+ }
 
  /**
   * Updates player score
   */
 function checkAnswer(correctAnswer, button) {
-    let scoreNum = Number(score.textContent.substring(7,10));
+    scoreNum = Number(score.textContent.substring(7,10));
     if (correctAnswer) { //Adds timeLeft to current score
-        score.textContent = `Score: ${timeLeft + scoreNum}`
+        score.textContent = `Score: ${timeLeft + scoreNum}`;
+    } else if (scoreNum < 10) { //Prevents score < 0
+        resetScore()
     } else { // Subtracts 10 points from current score
-        score.textContent = `Score: ${scoreNum - 10}`
-    }
+        score.textContent = `Score: ${scoreNum - 10}`;
+    } 
 }
 
 /**
  * Resets score back to 0
  */
-resetScore = () => (score.textContent = 'Score: 0')
+function resetScore() {
+    score.textContent = 'Score: 0';
+    scoreNum = 0;
+}
 
  /**
   * Checks wether the answer is correct or incorrect, and adds the corresponding class
   */
- function setStatusClass(element, correct) {
-    clearStatusClass(element) 
+function setStatusClass(element, correct) {
+    clearStatusClass(element); 
     if (correct) {
         element.classList.add('correct');
     } else {
         element.classList.add('incorrect');
-    };
- };
+    }
+ }
 
  /**
   * Clears the existing classes of the answer buttons
@@ -192,9 +199,9 @@ function startTimer() {
         timer.textContent = timeLeft;
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
-        };
-    }, 1000)
-};
+        }
+    }, 1000);
+}
 
 /**
  * Function to stop timer when an answer is selected
@@ -202,15 +209,15 @@ function startTimer() {
 
 function stopTimer() {
     clearInterval(timerInterval);
-};
+}
 
 function endGame(currentQuestionIndex) {
-    let scoreNum = Number(score.textContent.substring(7,10));
+    scoreNum = Number(score.textContent.substring(7,10));
     if (currentQuestionIndex > 9) {
-        questionArea.classList.add('hide')
-        answerArea.classList.add('hide')
-        score.classList.add('hide')
-        endScreen.classList.remove('hide')
+        questionArea.classList.add('hide');
+        answerArea.classList.add('hide');
+        score.classList.add('hide');
+        endScreen.classList.remove('hide');
         finalScore.textContent = scoreNum;
     }
 }
@@ -223,7 +230,7 @@ function timeout() {
                 answerButton.classList.add('correct');
             } else {
                 answerButton.classList.add('incorrect');
-            };
-        };   
-    };
-};
+            }
+        }
+    }
+}
