@@ -57,6 +57,10 @@ function menuControls(btn) {
             answerArea.classList.add('hide');
             score.classList.add('hide');
             break;
+            case "replay-btn": //When "replay" button is clicked
+            homeScreen.classList.remove('hide');
+            endScreen.classList.add('hide');
+            break;
         case "next-btn": //When "next" button is clicked
             currentQuestionIndex++;
             nextQuestion();
