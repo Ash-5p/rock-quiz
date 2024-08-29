@@ -127,6 +127,7 @@ function startGame() {
   */
 function resetState() {
     nextButton.classList.add('inactive');
+    nextButton.disabled = true;
     while (answerArea.firstChild) {
         answerArea.removeChild(answerArea.firstChild);
     }
@@ -139,6 +140,7 @@ function resetState() {
  */
 function selectAnswer() {
     stopTimer();
+    nextButton.disabled = false;
    nextButton.classList.remove('inactive');
    Array.from(answerArea.children).forEach(button => {
     setStatusClass(button, button.dataset.correct);
