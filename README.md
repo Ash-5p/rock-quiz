@@ -388,7 +388,14 @@ by sending yourself the following command: `!freemedia`.
 | --- | --- | --- | --- |
 | [Music Radar](https://cdn.mos.cms.futurecdn.net/XXRptkBUCmWqW6Wysqfm5P-1200-80.jpg.webp) | question | image | cloud guitar question | 
 | [Heritage Auctions](https://dyn1.heritagestatic.com/lf?set=path%5B4%2F7%2F5%2F9%2F4759129%5D%2Csizedata%5B850x600%5D&call=url%5Bfile%3Aproduct.chain%5D) | question | image | axe guitar question |
-| [Brian May Guitars](https://shop.brianmayguitars.co.uk/user/special/content/Antique%20Cherry%20b.jpg) | question | image | BM guitar question |
+| [Brian May Guitars](https://shop.brianmayguitars.co.uk/user/special/content/Antique%20Cherry%20b.jpg) | question | image | BM guitar question | 
+| [Ground Guitars](https://www.groundguitar.com/wp-content/uploads/2022/05/Kramer-5150-Eddie-Van-Halen.jpg) | question | image | 5150 guitar question | 
+| [Guitar](https://www.guitar.co.uk/media/catalog/product/cache/1/image/800x400/9df78eab33525d08d6e5fb8d27136e95/f/e/fender_kurt_cobain_jag-stang_sonic_blue_front.jpeg) | question | image | Kurt Cobain guitar question |
+| [ESP Guitars](https://cdn.connectsites.net/user_files/esp/product_images/000/009/980/original.png?1389980044) | question | image |  snakebyte guitar question |
+| [Reverb](https://rvb-img.reverb.com/image/upload/s--UnfJb080--/a_exif,c_limit,e_unsharp_mask:80,f_auto,fl_progressive,g_south,h_1600,q_80,w_1600/v1459200223/df61mcxwwunthem8u8mc.jpg) | question | image |  Dave Mustaine guitar question |
+| [Guitar Village](https://guitarvillage.co.uk/wp-content/uploads/2022/10/Gibson-SG-Standard-61-Vintage-Cherry-030_01-compress.jpg) | question | image |  SG guitar question |
+| []() | question | image |  guitar question |
+| []() | question | image |  guitar question |
 | [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages | 
 | [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
 | [Unsplash](https://unsplash.com) | product page | image | sample of fake products |

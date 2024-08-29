@@ -499,12 +499,12 @@ const gameQuestions = [
         answers: [
             { text: 'Fender', correct: false },
             { text: 'Gibson', correct: true },
-            { text: 'Gretch', correct: false },
+            { text: 'Gretsch', correct: false },
             { text: 'PRS', correct: false }
         ]
     },
      {
-    question: "Which famous glam rock bassist is known for playing the bass guitar below?",
+    question: "Which famous glam rock bassist is known for playing the guitar below?",
         imageSrc: 'assets/images/questions/axe-guitar.jpg',
         answers: [
             { text: 'Blackie Lawless', correct: false },
@@ -514,8 +514,48 @@ const gameQuestions = [
         ]
     },
     {
+        question: "Which famous guitarist is known for playing the guitar below?",
+        imageSrc: 'assets/images/questions/5150-guitar.jpg',
+        answers: [
+            { text: 'Randy Rhoads', correct: false },
+            { text: 'Eddie Van Halen', correct: true },
+            { text: 'Dio', correct: false },
+            { text: 'James Hetfield', correct: false }
+        ]
+    },
+    {
+        question: "What is the name of the guitar played by Kurt Cobain whos name was a combination of 2 different Fender guitars?",
+        imageSrc: 'assets/images/questions/js-guitar.jpeg',
+        answers: [
+            { text: 'Mustuar', correct: false },
+            { text: 'Jag-stang', correct: true },
+            { text: 'Jazzmaster', correct: false },
+            { text: 'Jazz-stang', correct: false }
+        ]
+    },
+    {
+        question: "What is the name of the below guitar, famously played by James Hetfield?",
+        imageSrc: 'assets/images/questions/snakebyte-guitar.png',
+        answers: [
+            { text: 'Venomtooth', correct: false },
+            { text: 'Snakebyte', correct: true },
+            { text: 'Surpentfang', correct: false },
+            { text: 'Cobra Kai', correct: false }
+        ]
+    },
+    {
+        question: "The below guitar from Dean Guitars' \"Dave Mustaine\" series, features album art from which Megadeth album?",
+        imageSrc: 'assets/images/questions/dean-guitar.webp',
+        answers: [
+            { text: 'Risk', correct: false },
+            { text: 'Rust in Peice', correct: true },
+            { text: 'The System has Failed', correct: false },
+            { text: 'Cryptic Writings', correct: false }
+        ]
+    },
+    {
         question: "",
-        imageSrc: '',
+        imageSrc: 'assets/images/questions/-guitar',
         answers: [
             { text: '', correct: false },
             { text: '', correct: true },
@@ -525,117 +565,7 @@ const gameQuestions = [
     },
     {
         question: "",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "",
-        imageSrc: '',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "",
-        imageSrc: '',
+        imageSrc: 'assets/images/questions/-guitar',
         answers: [
             { text: '', correct: false },
             { text: '', correct: true },

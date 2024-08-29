@@ -77,7 +77,11 @@ function menuControls(btn) {
 }
 
 /**
- * Main fuction to start the game
+ * Main fuction to start the game:
+ *  - Hides homescreen
+ *  - Shows answer & question area
+ *  - Shuffles questions
+ *  - Calls nextQuestion(), startTimer() & resetScore()
  */
 function startGame() {
     homeScreen.classList.add('hide');
@@ -127,7 +131,10 @@ function startGame() {
  }
 
  /**
-  * Resets the state of game area by removing existing buttons and resetting timer interval
+  * Resets the state of game area:
+  *  - Removes existing buttons
+  *  - Reset timer to 20 seconds
+  *  - Disables nextButton
   */
 function resetState() {
     nextButton.classList.add('inactive');
@@ -140,7 +147,9 @@ function resetState() {
 }
 
 /**
- * Function to manage events when an answer is selected
+ * Function to manage events when an answer is selected:
+ *  - Stops timer
+ *  - Enables nextButton
  */
 function selectAnswer() {
     stopTimer();
@@ -215,11 +224,16 @@ function startTimer() {
 /**
  * Function to stop timer when an answer is selected
  */
-
 function stopTimer() {
     clearInterval(timerInterval);
 }
 
+/**
+ * Function to end game after 10 questions
+ *  - Hide question & answer area
+ *  - Show final score screen
+ *  - Display final score
+ */
 function endGame(currentQuestionIndex) {
     scoreNum = Number(score.textContent.substring(7,10));
     if (currentQuestionIndex > 9) {
@@ -231,9 +245,16 @@ function endGame(currentQuestionIndex) {
     }
 }
 
+/**
+ * Function to control actions when timer reaches 0
+ *  - Disable answer buttons
+ *  - Deduct 5 points from score
+ *  - Enable nextButton
+ */
 function timeout() {
     if (timeLeft <= 0) {
         nextButton.classList.remove('inactive');
+        nextButton.disabled = false;
         for (let answerButton of answerButtons) {
             if (answerButton.dataset.correct === 'true') {
                 answerButton.classList.add('correct');
