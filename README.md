@@ -1,4 +1,5 @@
-# ![image](assets/images/logo.png) (https://ash-5p.github.io/rock-quiz)
+# ![image](assets/images/logo.png) 
+# (https://ash-5p.github.io/rock-quiz)
 
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Ash-5p/rock-quiz)](https://github.com/Ash-5p/rock-quiz/commits/main)
 [![GitHub last commit](https://img.shields.io/github/last-commit/Ash-5p/rock-quiz)](https://github.com/Ash-5p/rock-quiz/commits/main)
@@ -399,15 +400,8 @@ by sending yourself the following command: `!freemedia`.
 | [Pintrest](https://i.pinimg.com/originals/7d/eb/dc/7debdcad8fea68ba6c57eb1e347d737d.png) | favicon | image | favicon |
 | [PNG Wing](https://w7.pngwing.com/pngs/369/305/png-transparent-musical-note-musical-theatre-double-whole-note-musical-note-photography-rectangle-monochrome-thumbnail.png) | all pages | image |  header logo |
 | [Super Coloring](https://www.supercoloring.com/sites/default/files/fif/2024/02/shape-of-electric-guitar-electric-guitar-1-paper-crafts.png) | all pages | image | header logo |
-| [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages | 
-| [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
-| [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
-| [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
-| [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
-| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
-| [Audio Micro](https://www.audiomicro.com/free-sound-effects) | game page | audio | free audio files to generate the game sounds |
-| [Videvo](https://www.videvo.net/) | home page | video | background video on the hero section |
-| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+| [removebg](https://www.remove.bg/) | entire site | image | tool for making image backgrounds transparent |
+| [GIMP](https://www.gimp.org/) | entire site | image | tool for editing images |
 
 ### Acknowledgements
 
