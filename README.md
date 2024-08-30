@@ -392,10 +392,13 @@ by sending yourself the following command: `!freemedia`.
 | [Ground Guitars](https://www.groundguitar.com/wp-content/uploads/2022/05/Kramer-5150-Eddie-Van-Halen.jpg) | question | image | 5150 guitar question | 
 | [Guitar](https://www.guitar.co.uk/media/catalog/product/cache/1/image/800x400/9df78eab33525d08d6e5fb8d27136e95/f/e/fender_kurt_cobain_jag-stang_sonic_blue_front.jpeg) | question | image | Kurt Cobain guitar question |
 | [ESP Guitars](https://cdn.connectsites.net/user_files/esp/product_images/000/009/980/original.png?1389980044) | question | image |  snakebyte guitar question |
-| [Reverb](https://rvb-img.reverb.com/image/upload/s--UnfJb080--/a_exif,c_limit,e_unsharp_mask:80,f_auto,fl_progressive,g_south,h_1600,q_80,w_1600/v1459200223/df61mcxwwunthem8u8mc.jpg) | question | image |  Dave Mustaine guitar question |
+| [Reverb](https://rvb-img.reverb.com/image/upload/s--UnfJb080--/a_exif,c_limit,e_unsharp_mask:80,f_auto,fl_progressive,g_south,h_1600,q_80,w_1600/v1459200223/df61mcxwwunthem8u8mc.jpg) | question | image | Dave Mustaine guitar question |
 | [Guitar Village](https://guitarvillage.co.uk/wp-content/uploads/2022/10/Gibson-SG-Standard-61-Vintage-Cherry-030_01-compress.jpg) | question | image |  SG guitar question |
+| [Music Man](https://s3-us-west-2.amazonaws.com/static.music-man.com/website/images/instruments/instrument-1.png?1695268095) | question | image |  Music Man guitar question |
 | []() | question | image |  guitar question |
-| []() | question | image |  guitar question |
+| [Pintrest](https://i.pinimg.com/originals/7d/eb/dc/7debdcad8fea68ba6c57eb1e347d737d.png) | favicon | image | favicon |
+| [PNG Wing](https://w7.pngwing.com/pngs/369/305/png-transparent-musical-note-musical-theatre-double-whole-note-musical-note-photography-rectangle-monochrome-thumbnail.png) | all pages | image |  header logo |
+| [Super Coloring](https://www.supercoloring.com/sites/default/files/fif/2024/02/shape-of-electric-guitar-electric-guitar-1-paper-crafts.png) | all pages | image | header logo |
 | [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages | 
 | [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
 | [Unsplash](https://unsplash.com) | product page | image | sample of fake products |

@@ -485,7 +485,7 @@ const gameQuestions = [
     },
     {
         question: "Which famous guitarist is known for playing the guitar below?",
-        imageSrc: 'assets/images/questions/bm-guitar.jpg',
+        imageSrc: 'assets/images/questions/bm-guitar.webp',
         answers: [
             { text: 'Randy Rhoads', correct: false },
             { text: 'Angus Young', correct: false },
@@ -495,7 +495,7 @@ const gameQuestions = [
     },
     {
         question: "Which guitar manufacturer made the original \"SG\" shaped guitar?",
-        imageSrc: 'assets/images/questions/sg-guitar.jpg',
+        imageSrc: 'assets/images/questions/sg-guitar.webp',
         answers: [
             { text: 'Fender', correct: false },
             { text: 'Gibson', correct: true },
@@ -505,7 +505,7 @@ const gameQuestions = [
     },
      {
     question: "Which famous glam rock bassist is known for playing the guitar below?",
-        imageSrc: 'assets/images/questions/axe-guitar.jpg',
+        imageSrc: 'assets/images/questions/axe-guitar.webp',
         answers: [
             { text: 'Blackie Lawless', correct: false },
             { text: 'Gene Simmons', correct: true },
@@ -515,7 +515,7 @@ const gameQuestions = [
     },
     {
         question: "Which famous guitarist is known for playing the guitar below?",
-        imageSrc: 'assets/images/questions/5150-guitar.jpg',
+        imageSrc: 'assets/images/questions/5150-guitar.webp',
         answers: [
             { text: 'Randy Rhoads', correct: false },
             { text: 'Eddie Van Halen', correct: true },
@@ -525,7 +525,7 @@ const gameQuestions = [
     },
     {
         question: "What is the name of the guitar played by Kurt Cobain whos name was a combination of 2 different Fender guitars?",
-        imageSrc: 'assets/images/questions/js-guitar.jpeg',
+        imageSrc: 'assets/images/questions/js-guitar.webp',
         answers: [
             { text: 'Mustuar', correct: false },
             { text: 'Jag-stang', correct: true },
@@ -535,7 +535,7 @@ const gameQuestions = [
     },
     {
         question: "What is the name of the below guitar, famously played by James Hetfield?",
-        imageSrc: 'assets/images/questions/snakebyte-guitar.png',
+        imageSrc: 'assets/images/questions/snakebyte-guitar.webp',
         answers: [
             { text: 'Venomtooth', correct: false },
             { text: 'Snakebyte', correct: true },
@@ -554,23 +554,13 @@ const gameQuestions = [
         ]
     },
     {
-        question: "",
-        imageSrc: 'assets/images/questions/-guitar',
+        question: "The below guitar, made by Music Man, is named after which country artist?",
+        imageSrc: 'assets/images/questions/music-man-guitar.webp',
         answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
-        ]
-    },
-    {
-        question: "",
-        imageSrc: 'assets/images/questions/-guitar',
-        answers: [
-            { text: '', correct: false },
-            { text: '', correct: true },
-            { text: '', correct: false },
-            { text: '', correct: false }
+            { text: 'Johnny Cash', correct: false },
+            { text: 'Albert Lee', correct: true },
+            { text: 'Ernie Ball', correct: false },
+            { text: 'Glen Campbell', correct: false }
         ]
     }
 ]

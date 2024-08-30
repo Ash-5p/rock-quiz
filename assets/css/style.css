@@ -68,8 +68,8 @@ header {
 #game-area {
 
     padding: 10px;
-    margin: 10px 20px;
-    height: 80vh;
+    margin: 0 20px;
+    height: 82vh;
     background-image: linear-gradient(to top, #322b2bd4, #473835d4, #694f3cd4, #86453ad4, #ab2d26d4, #d8290ad4);
     border-radius: 30px;
     box-shadow: black 2px 2px 2px 2px;
@@ -124,11 +124,6 @@ header {
     margin: 10px 0;
 }
 
-.img-box>img {
-    border-radius: 10px;
-
-}
-
 #timer {
     text-align: center;
     background-color: white;
@@ -164,6 +159,7 @@ header {
     font-size: 1em;
     margin: 1px;
     width: 45%;
+    height: 14vh;
 }
 
 .correct {
