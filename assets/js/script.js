@@ -4,13 +4,14 @@
 const homeScreen = document.getElementById('home'); //Homescreen
 const endScreen = document.getElementById('end-screen'); //End screen
 const howTo = document.getElementById('how-to'); //How to screen
-const gameArea = document.getElementById('game-area'); //Game area div
-const questionArea = document.getElementById('question'); // Question div
+const gameArea = document.getElementById('game-area'); //Game area section
+const questionArea = document.getElementById('question'); // Question section
 const questionElement = questionArea.firstElementChild; //Question text
 const imageBox = document.getElementById('img-box'); //Image constainer
 const questionImage = imageBox.firstElementChild; // Question image
 const answerArea = document.getElementById('answers'); // Answer div
 const answerButtons = document.getElementsByClassName('ans-btn'); //Answer buttons
+const homeButton = document.getElementById('home-btn'); //Home button
 const nextButton = document.getElementById('next-btn'); //Next button
 const menuButtons = document.getElementsByClassName('menu-btn'); //Menu buttons
 const timer = document.getElementById("timer"); //Timer display
@@ -273,3 +274,4 @@ function timeout() {
         }
     }
 }
+

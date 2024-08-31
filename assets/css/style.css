@@ -60,8 +60,7 @@ header {
 }
 
 #logo {
-    height: 75px;
-    margin-top: 5px;
+    height: 65px;
 }
 
 /* Main Game Area */
@@ -115,11 +114,33 @@ header {
     height: 20vh;
     max-height: 145px;
     justify-content: center;
-    margin: 10px 0;
+}
+
+.img-box img {
+    max-width: 260px;
+    overflow-x: hidden;
+}
+
+.question>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
 }
 
 #question {
-    height: 48vh;
+    height: 49vh;
+}
+
+#home-btn {
+    font-size: 16px;
+    margin: 0
+}
+
+#next-btn {
+    font-size: 16px;
+    margin: 0
 }
 
 #timer {
@@ -198,13 +219,9 @@ footer a {
 
 /* Media Queries */
 
-@media screen and (max-height:600px) {
+@media screen and (min-height:600px) {
 
-    .question > div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+
 
     .img-box img {
         max-width: 260px;
@@ -221,7 +238,21 @@ footer a {
     }
 
     #logo {
-        height: 65px;
+        height: 75px;
+        margin-top: 5px;
+    }
+
+    #timer {
+        order: 1;
+        margin: 0 46.5%;
+        width: 8%;
+        height: 6.5vw;
+        font-size: 5vw;
+        place-content: center;
+        max-width: 70px;
+        max-height: 70px;
+        min-width: 25px;
+        min-height: 25px;
     }
 
 }
@@ -247,10 +278,15 @@ footer a {
     }
 }
 
+
 /* Screens wider than 1044px */
 @media screen and (min-width:1044px) {
 
     #game-area {
         margin: 10px auto;
+    }
+
+    #timer {
+        font-size: 52.2px;
     }
 }
