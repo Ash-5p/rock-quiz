@@ -74,14 +74,8 @@ header {
     border-radius: 30px;
     box-shadow: black 2px 2px 2px 2px;
     max-width: 1024px;
-    position: relative;
-}
-
-#score {
-    position: absolute;
-    bottom: 3px;
-    text-align: center;
-    width: 97.5%;
+    display: flex;
+    flex-flow: column;
 }
 
 /* Home Screen */
@@ -124,6 +118,10 @@ header {
     margin: 10px 0;
 }
 
+#question {
+    height: 48vh;
+}
+
 #timer {
     text-align: center;
     background-color: white;
@@ -132,7 +130,6 @@ header {
     font-size: 20px;
     border-radius: 50%;
     width: 30px;
-    margin: auto;
 }
 
 .inactive {
@@ -158,8 +155,9 @@ header {
 .ans-btn {
     font-size: 1em;
     margin: 1px;
-    width: 45%;
+    width: 49%;
     height: 14vh;
+    padding: 2px;
 }
 
 .correct {
@@ -204,6 +202,8 @@ footer a {
 
     .question > div {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .img-box img {

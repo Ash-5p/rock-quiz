@@ -82,16 +82,6 @@ const gameQuestions = [
         ]
     },
     {
-        question: "Which Beatles album, released in 1967, is known for its experimental studio techniques?",
-        imageSrc: '',
-        answers: [
-            { text: "Revolver", correct: false },
-            { text: "Rubber Soul", correct: false },
-            { text: "Sgt. Pepper's Lonely Hearts Club Band", correct: true },
-            { text: "Magical Mystery Tour", correct: false }
-        ]
-    },
-    {
         question: "Which band had a hit with 'You Really Got Me' in 1964, featuring a pioneering power chord riff?",
         imageSrc: '',
         answers: [
@@ -188,7 +178,7 @@ const gameQuestions = [
             { text: "High Voltage", correct: true },
             { text: "TNT", correct: false },
             { text: "Let There Be Rock", correct: false },
-            { text: "Dirty Deeds Done Dirt Cheap", correct: false }
+            { text: "Who Made Who", correct: false }
         ]
     },
     {
@@ -226,7 +216,7 @@ const gameQuestions = [
         imageSrc: '',
         answers: [
             { text: "War", correct: false },
-            { text: "The Unforgettable Fire", correct: false },
+            { text: "October", correct: false },
             { text: "The Joshua Tree", correct: true },
             { text: "Rattle and Hum", correct: false }
         ]
@@ -275,7 +265,7 @@ const gameQuestions = [
         question: "Which 1980 AC/DC album was the first to feature Brian Johnson as the lead vocalist?",
         imageSrc: '',
         answers: [
-            { text: "For Those About to Rock We Salute You", correct: false },
+            { text: "Who Made Who", correct: false },
             { text: "Back in Black", correct: true },
             { text: "Highway to Hell", correct: false },
             { text: "The Razor's Edge", correct: false }
@@ -428,7 +418,7 @@ const gameQuestions = [
             { text: "Fell in Love with a Girl", correct: false },
             { text: "Seven Nation Army", correct: true },
             { text: "Icky Thump", correct: false },
-            { text: "Dead Leaves and the Dirty Ground", correct: false }
+            { text: "Ball and Biscuit", correct: false }
         ]
     },
     {

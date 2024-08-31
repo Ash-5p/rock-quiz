@@ -112,8 +112,10 @@ function startGame() {
     questionImage.src = gameQuestions.imageSrc;
     if (gameQuestions.imageSrc === '') { // Removes alt attribute for non-image questions
         questionImage.alt = ''; 
+        imageBox.classList.add('hide');
     } else {
         questionImage.alt = 'guitar'; // Adds alt attribute if image question
+        imageBox.classList.remove('hide');
     }
     gameQuestions.answers.sort(() => Math.random() - 0.5);
     gameQuestions.answers.forEach(answer => {
