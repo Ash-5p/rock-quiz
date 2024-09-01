@@ -514,7 +514,7 @@ const gameQuestions = [
         ]
     },
     {
-        question: "What is the name of the guitar played by Kurt Cobain whos name was a combination of 2 different Fender guitars?",
+        question: "What is the name of the guitar played by Kurt Cobain whos name is a combination of 2 different Fender guitars?",
         imageSrc: 'assets/images/questions/js-guitar.webp',
         answers: [
             { text: 'Mustuar', correct: false },
