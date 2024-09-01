@@ -75,6 +75,8 @@ header {
     max-width: 1024px;
     display: flex;
     flex-flow: column;
+    overflow: hidden;
+    position: relative;
 }
 
 /* Home Screen */
@@ -103,22 +105,28 @@ header {
     font-size: 1em;
     padding: 5px;
     overflow-y: auto;
-    max-height: 45vh;
+    max-height: 977px;
     list-style: none;
+    height: 45vh;
+}
+
+#back-btn {
+    position: absolute;
+    bottom: 0;
 }
 
 /* Question Area */
 
 .img-box {
     display: flex;
-    height: 20vh;
-    max-height: 145px;
+    height: 80%;
     justify-content: center;
 }
 
 .img-box img {
     max-width: 260px;
     overflow-x: hidden;
+    align-self: center;
 }
 
 .question>div {
@@ -174,7 +182,7 @@ header {
 }
 
 .ans-btn {
-    font-size: 1em;
+    font-size: 16px;
     margin: 1px;
     width: 49%;
     height: 14vh;
@@ -189,6 +197,28 @@ header {
 .incorrect {
     border-color: orange;
     background-color: red;
+}
+
+
+/* End Screen */
+
+#end-screen {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 82vh;
+}
+
+#final-score {
+    flex-basis: 100%;
+    text-align: center;
+    align-content: center;
+    font-size: 3em;
+}
+
+button#replay-btn {
+    max-height: 50px;
+    margin-top: auto;
 }
 
 /* Footer */
@@ -219,74 +249,102 @@ footer a {
 
 /* Media Queries */
 
-@media screen and (min-height:600px) {
+@media screen and (min-width:425px) {
 
+    .img-box {
+        height: 31vh;
 
-
-    .img-box img {
-        max-width: 260px;
-    }
-
-    #home-btn {
-        font-size: 16px;
-        margin: 0
-    }
-
-    #next-btn {
-        font-size: 16px;
-        margin: 0
     }
 
     #logo {
-        height: 75px;
+        height: 13vh;
         margin-top: 5px;
+        max-width: 375px;
+        max-height: 110px;
     }
 
-    #timer {
-        order: 1;
-        margin: 0 46.5%;
-        width: 8%;
-        height: 6.5vw;
-        font-size: 5vw;
-        place-content: center;
-        max-width: 70px;
-        max-height: 70px;
-        min-width: 25px;
-        min-height: 25px;
+    /* Screens wider than 425px and shorter than 400px */
+    @media screen and (max-height:400px) {
+
+        .ans-btn {
+            height: auto;
+        }
+
+        .ans-btn img {
+            margin-bottom: 30px;
+        }
+
+        #answers {
+            height: auto;
+            margin-top: auto;
+        }
+
     }
 
+    /* Screens wider than 425px and taller than 600px */
+    @media screen and (min-height:600px) {
+
+        .how-to ul {
+            height: 65vh;
+        }
+
+        .ans-btn {
+            font-size: 22px;
+        }
+
+        .img-box img {
+            max-width: 550px;
+        }
+
+        #timer {
+            order: 1;
+            margin: 0 46.5%;
+            width: 8%;
+            height: 6.5vw;
+            font-size: 5vw;
+            place-content: center;
+            max-width: 70px;
+            max-height: 70px;
+            min-width: 25px;
+            min-height: 25px;
+        }
+
+        #final-score {
+            font-size: 5vh;
+        }
+
+        button#replay-btn {
+            max-height: 100px;
+        }
+    }
 }
 
-@media screen and (min-height:730px) {
 
-    /* This media query changes the footer from relative to fixed on screens larger than 730px.
-    This prevents the social links from sitting on top of the game area on short devices. */
-    footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
-}
-
-/* Screens wider than 425px */
-@media screen and (min-width:425px) {
-
-    .home-btn {
-        width: 350px;
-        max-width: 500px;
-        align-self: center;
-    }
-}
 
 
 /* Screens wider than 1044px */
 @media screen and (min-width:1044px) {
 
     #game-area {
-        margin: 10px auto;
+        margin: 0 auto;
     }
 
-    #timer {
-        font-size: 52.2px;
+
+
+    @media screen and (min-height:400px) {
+        #timer {
+            font-size: 52.2px;
+        }
+
+        .ans-btn,
+        #question,
+        #score {
+            font-size: 25px;
+        }
+
+        #home-btn,
+        #next-btn {
+            font-size: 30px;
+        }
     }
 }
