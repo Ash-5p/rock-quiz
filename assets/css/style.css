@@ -120,14 +120,16 @@ header {
 
 .img-box {
     display: flex;
-    height: 50%;
+    height: 25%;
     justify-content: center;
 }
 
 .img-box img {
     max-width: 260px;
-    overflow-x: hidden;
+    overflow: hidden;
     align-self: center;
+    object-fit: contain;
+    height: 100%;
 }
 
 .question>div {
@@ -139,21 +141,23 @@ header {
 }
 
 #question {
-    height: 49vh;
+    height: 65%;
 }
 
-#question > h3 {
+#question>h3 {
     text-align: center;
+    height: 50%;
+    align-content: center;
+    font-size: 16px;
+    color: black;
+    background-color: #fafafa;
+    border-radius: 1em;
 }
 
+#next-btn,
 #home-btn {
     font-size: 16px;
-    margin: 0
-}
-
-#next-btn {
-    font-size: 16px;
-    margin: 0
+    margin: 0;
 }
 
 #timer {
@@ -161,9 +165,14 @@ header {
     background-color: #fafafa;
     color: #322b2bd4;
     font-family: "New Rocker", sans-serif;
-    font-size: 20px;
-    border-radius: 50%;
-    width: 30px;
+    font-size: 25px;
+    border-radius: 20%;
+    width: 28px;
+    height: 28px;
+}
+
+#score {
+    font-size: 16px;
 }
 
 .inactive {
@@ -182,15 +191,16 @@ header {
 #answers {
     display: flex;
     flex-flow: row wrap;
-    height: 10vh;
+    height: 30%;
     justify-content: center;
+    margin-top: auto;
 }
 
 .ans-btn {
     font-size: 16px;
     margin: 1px;
     width: 49%;
-    height: 14vh;
+    height: 48%;
     padding: 2px;
 }
 
@@ -231,6 +241,21 @@ button#replay-btn {
     margin-bottom: auto;
 }
 
+/* Error page */
+
+.error {
+    text-align: center;
+}
+
+.error li {
+    list-style: none;
+    padding: 5px;
+}
+
+.error a {
+    color: wheat;
+}
+
 /* Footer */
 footer {
     position: relative;
@@ -266,16 +291,30 @@ footer a {
 
 @media screen and (min-width:425px) {
 
-    .img-box {
-        height: 28vh;
-
-    }
-
     #logo {
         height: 13vh;
         margin-top: 5px;
         max-width: 375px;
         max-height: 110px;
+    }
+
+    #question>h3 {
+        font-size: calc(16px + 0.5vh);
+    }
+
+    #timer {
+        font-size: calc(24px + 1.2vh);
+        width: calc(24px + 1.5vh);
+        height: calc(21px + 2vh);
+    }
+
+    #score {
+        font-size: calc(16px + 1.2vh);
+    }
+
+    #next-btn,
+    #home-btn {
+        font-size: calc(16px + 1.2vh);
     }
 
     /* Screens wider than 425px and shorter than 400px */
@@ -307,10 +346,6 @@ footer a {
             font-size: 22px;
         }
 
-        .img-box {
-            height: 80%;
-        }
-
         .img-box img {
             max-width: 550px;
         }
@@ -337,7 +372,7 @@ footer a {
         font-size: 20px;
     }
 
-    .how-to > h2 {
+    .how-to>h2 {
         font-size: calc(16px + 3vh);
         text-align: center;
     }
@@ -350,51 +385,34 @@ footer a {
 
 }
 
-/* All screens taller than 800px */
-@media screen and (min-height:800px) {
-   
-    #timer {
-        order: 1;
-        margin: 0 46.5%;
-        width: 8%;
-        height: 6.5vw;
-        font-size: 5vw;
-        place-content: center;
-        max-width: 70px;
-        max-height: 70px;
-        min-width: 25px;
-        min-height: 25px;
-    }
-
-    .img-box {
-        height: 50%;
-    }
-}
-
-
 /* Screens wider than 1044px */
 @media screen and (min-width:1044px) {
 
     #game-area {
         margin: 0 auto;
     }
+}
 
+/* Screens taller than 480px */
+@media screen and (min-height:480px) {
 
-    /* Screens wider than 1044px and taller than 800px */
-    @media screen and (min-height:800px) {
-        #timer {
-            font-size: 52.2px;
-        }
+    .img-box {
+        height: 40%;
+    }
 
-        .ans-btn,
-        #question,
-        #score {
-            font-size: 25px;
-        }
+    #question {
+        height: 75%;
+    }
 
-        #home-btn,
-        #next-btn {
-            font-size: 30px;
-        }
+    #question>h3 {
+        height: 40% ;
+    }
+}
+
+/* Screens taller than 520px */
+@media screen and (min-height:520px) {
+
+    #answers {
+        height: 25%;
     }
 }
