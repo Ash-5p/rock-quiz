@@ -362,16 +362,6 @@ const gameQuestions = [
         ]
     },
     {
-        question: "Which Oasis song from the album '(What's the Story) Morning Glory?' features a prominent acoustic guitar intro?",
-        imageSrc: '',
-        answers: [
-            { text: "Wonderwall", correct: true },
-            { text: "Don't Look Back in Anger", correct: false },
-            { text: "Champagne Supernova", correct: false },
-            { text: "Live Forever", correct: false }
-        ]
-    },
-    {
         question: "What was the debut album of Rage Against the Machine, known for its aggressive guitar riffs, released in 1992?",
         imageSrc: '',
         answers: [

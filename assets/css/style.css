@@ -19,7 +19,7 @@ body {
     flex-direction: column;
     background-image: linear-gradient(to bottom, #322b2bd4, #473535d4, #693c3cd4);
     /* Borrowed from Blurty images source code */
-    color: #fafafa;
+    color: #F5DEB3;
     font-family: "RocknRoll One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -41,8 +41,8 @@ h3 {
     margin: 10px;
     padding: 2px 20px;
     border-radius: 5px;
-    border: solid 3px #fafafa;
-    color: #fafafa;
+    border: solid 3px #F5DEB3;
+    color: #F5DEB3;
     background-color: #322b2bd4;
     font-size: 1.5em;
     font-family: inherit;
@@ -150,7 +150,7 @@ header {
     align-content: center;
     font-size: 16px;
     color: black;
-    background-color: #fafafa;
+    background-color: #F5DEB3;
     border-radius: 1em;
 }
 
@@ -162,7 +162,7 @@ header {
 
 #timer {
     text-align: center;
-    background-color: #fafafa;
+    background-color: #F5DEB3;
     color: #322b2bd4;
     font-family: "New Rocker", sans-serif;
     font-size: 25px;
@@ -177,8 +177,8 @@ header {
 
 .inactive {
     background-color: rgba(50, 43, 43, .4);
-    border-color: rgba(255, 255, 255, 0.4);
-    color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(245, 222, 179, 0.4);
+    color: rgba(245, 222, 179, 0.4);
 }
 
 /* Prevents the default hover effect for buttons that are assigned the "inactive" class */
@@ -280,11 +280,11 @@ footer a {
 #socials li {
     list-style: none;
     text-decoration: none;
-    color: #fafafa;
+    color: #F5DEB3;
 }
 
 #socials a {
-    color: #fafafa;
+    color: #F5DEB3;
 }
 
 /* Media Queries */
