@@ -543,4 +543,4 @@ const gameQuestions = [
             { text: 'Glen Campbell', correct: false }
         ]
     }
-]
+];

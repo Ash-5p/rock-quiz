@@ -4,14 +4,12 @@
 const homeScreen = document.getElementById('home'); //Homescreen
 const endScreen = document.getElementById('end-screen'); //End screen
 const howTo = document.getElementById('how-to'); //How to screen
-const gameArea = document.getElementById('game-area'); //Game area section
 const questionArea = document.getElementById('question'); // Question section
 const questionElement = questionArea.firstElementChild; //Question text
 const imageBox = document.getElementById('img-box'); //Image constainer
 const questionImage = imageBox.firstElementChild; // Question image
 const answerArea = document.getElementById('answers'); // Answer div
 const answerButtons = document.getElementsByClassName('ans-btn'); //Answer buttons
-const homeButton = document.getElementById('home-btn'); //Home button
 const nextButton = document.getElementById('next-btn'); //Next button
 const menuButtons = document.getElementsByClassName('menu-btn'); //Menu buttons
 const timer = document.getElementById("timer"); //Timer display
@@ -173,7 +171,7 @@ function checkAnswer(correctAnswer, button) {
     if (correctAnswer) { //Adds timeLeft to current score
         score.textContent = `Score: ${timeLeft + scoreNum}`;
     } else if (scoreNum < 10) { //Prevents score < 0
-        resetScore()
+        resetScore();
     } else { // Subtracts 10 points from current score
         score.textContent = `Score: ${scoreNum - 10}`;
     } 
@@ -219,7 +217,7 @@ function startTimer() {
         timer.textContent = timeLeft;
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
-            timeout() // Call the timeout function when the timer runs out
+            timeout(); // Call the timeout function when the timer runs out
         }
     }, 1000);
 }
