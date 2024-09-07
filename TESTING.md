@@ -125,34 +125,14 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 ## Responsiveness
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to discuss testing the live/deployed site on various device sizes.
-
-The minimum requirement is for the following 3 tests:
-- Mobile
-- Tablet
-- Desktop
-
-**IMPORTANT**: You must provide screenshots of the tested responsiveness, to "prove" that you've actually tested them.
-
-Using the "amiresponsive" mockup image (or similar) does not suffice the requirements.
-Consider using some of the built-in device sizes in the Developer Tools.
-
-If you have tested the project on your actual mobile phone or tablet, consider also including screenshots of these as well.
-It showcases a higher level of manual tests, and can be seen as a positive inclusion!
-
-Sample responsiveness testing documentation:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
 | Device | Home | Question | Image Question | How-to | Score | 404 | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 4K Monitor | ![screenshot](documentation/responsiveness/responsive-4k-homescreen.png) | ![screenshot](documentation/responsiveness/responsive-4k-question.png) | ![screenshot](documentation/responsiveness/responsive-4k-image-question.png) | ![screenshot](documentation/responsiveness/responsive-4k-instructions.png) | ![screenshot](documentation/responsiveness/responsive-4k-score-screen.png) | ![screenshot](documentation/responsiveness/responsive-4k-404.png) | No scaling issues |
-| Google Pixel 7 Pro | ![screenshot](documentation/responsiveness/responsive-pixel-home.png) | ![screenshot](documentation/responsiveness/responsive-pixel-about.png) | ![screenshot](documentation/responsiveness/responsive-pixel-contact.png) | ![screenshot](documentation/responsiveness/responsive-pixel-etc.png) | Works as expected |
-| iPhone 14 | ![screenshot](documentation/responsiveness/responsive-iphone-home.png) | ![screenshot](documentation/responsiveness/responsive-iphone-about.png) | ![screenshot](documentation/responsiveness/responsive-iphone-contact.png) | ![screenshot](documentation/responsiveness/responsive-iphone-etc.png) | Works as expected |
+| 4K Monitor | ![screenshot](documentation/responsiveness/responsive-4k-homescreen.png) | ![screenshot](documentation/responsiveness/responsive-4k-question.png) | ![screenshot](documentation/responsiveness/responsive-4k-image-question.png) | ![screenshot](documentation/responsiveness/responsive-4k-instructions.png) | ![screenshot](documentation/responsiveness/responsive-4k-score-screen.png) | ![screenshot](documentation/responsiveness/responsive-4k-404.png) | Works as expected |
+| Tablet (Dev Tools) | ![screenshot](documentation/responsiveness/responsive-tablet-homescreen.png) | ![screenshot](documentation/responsiveness/responsive-tablet-question.png) | ![screenshot](documentation/responsiveness/responsive-tablet-image-question.png) | ![screenshot](documentation/responsiveness/responsive-tablet-instructions.png) | ![screenshot](documentation/responsiveness/responsive-tablet-score-screen.png) | ![screenshot](documentation/responsiveness/responsive-tablet-404.png) | Works as expected |
+| Mobile (Dev Tools) | ![screenshot](documentation/responsiveness/responsive-mobile-homescreen.png) | ![screenshot](documentation/responsiveness/responsive-mobile-question.png) | ![screenshot](documentation/responsiveness/responsive-mobile-image-question.png) | ![screenshot](documentation/responsiveness/responsive-mobile-instructions.png) | ![screenshot](documentation/responsiveness/responsive-mobile-score-screen.png) | ![screenshot](documentation/responsiveness/responsive-mobile-404.png) | Works as expected |
+| Google Pixel 7 Pro | ![screenshot](documentation/responsiveness/responsive-pixel-homescreen.png) | ![screenshot](documentation/responsiveness/responsive-pixel-question.png) | ![screenshot](documentation/responsiveness/responsive-pixel-image-question.png) | ![screenshot](documentation/responsiveness/responsive-pixel-instructions.png) | ![screenshot](documentation/responsiveness/responsive-pixel-score-screen.png) | ![screenshot](documentation/responsiveness/responsive-pixel-404.png) | Works as expected |
 | repeat for any other tested devices | x | x | x | x | x |
 
 ## Lighthouse Audit
@@ -178,10 +158,8 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Some minor warnings |
-| About | ![screenshot](documentation/lighthouse/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-about-desktop.png) | Some minor warnings |
-| Gallery | ![screenshot](documentation/lighthouse/lighthouse-gallery-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-gallery-desktop.png) | Slow response time due to large images |
-| x | x | x | repeat for any other tested pages/sizes |
+| Index | ![screenshot](documentation/lighthouse/lighthouse-index-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-index-desktop.png) | Some minor warnings |
+| 404 | ![screenshot](documentation/lighthouse/lighthouse-404-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-404-desktop.png) | Performance warning for mobile |
 
 ## Defensive Programming
 
