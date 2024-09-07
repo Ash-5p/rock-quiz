@@ -5,7 +5,9 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/Ash-5p/rock-quiz)](https://github.com/Ash-5p/rock-quiz/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/Ash-5p/rock-quiz)](https://github.com/Ash-5p/rock-quiz)
 
-![screenshot](documentation/mockup.png)
+This project is an interactive rock/guitar based quiz called "String Theory". It is intended to provide a fun, replayable experience to the user by offering a random selection of 10 questions from a possible 54. The quiz uses an unconventional scoring sytem, in which the player gains points equal to the amount of time left on the clock, further encouraging them to play again.
+
+![screenshot](documentation/readme/amiresponsive.png)
 
 source: [amiresponsive](https://ui.dev/amiresponsive?url=https://ash-5p.github.io/rock-quiz)
 
@@ -13,7 +15,7 @@ source: [amiresponsive](https://ui.dev/amiresponsive?url=https://ash-5p.github.i
 
 🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
 
-In this section, you will briefly explain your design processes.
+The color scheme of bright red and wheat is inspired by the appearence of a [vintage 50's Fender Stratocaster](documentation/readme/fender-strat.webp), and wheat coloring aims to emulate the yellowish color of old plastic like that seen on the pickups and tone/volume knobs. The 
 
 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
@@ -280,33 +282,17 @@ Ideally, you should provide an actual link to every resource used, not just a ge
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
 | [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
 | [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
-| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
-| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
 | [Flexbox Froggy](https://flexboxfroggy.com/) | entire site | modern responsive layouts |
 | [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
-| [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
-| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc) | leaderboard | using `localStorage()` in JS for high scores |
-| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | PP3 terminal | tutorial for adding color to the Python terminal |
-| [strftime](https://strftime.org) | CRUD functionality | helpful tool to format date/time from string |
-| [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
+| [Web Dev Simplified](https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js#L17C2-L18C27) | scripts.js | shuffle questions |
+| [Web Dev Simplified](https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js#L24C1-L25C56) | scripts.js | nextQuestion function |
+| [Web Dev Simplified](https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js#L45C1-L46C70) | scripts.js | resetState function |
+| [Web Dev Simplified](https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js#L54C1-L55C51) | scripts.js | selectAnswer function |
+| [Web Dev Simplified](https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js#L65C1-L77C2) | scripts.js | clearStatusClass & setStatusClass functions |
+
+
 
 ### Media
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to provide attribution links to any images, videos, or audio files borrowed from online.
-A few examples have been provided below to give you some ideas.
-
-If you're the owner (or a close acquaintance) of all media files, then make sure to specify this.
-Let the assessors know that you have explicit rights to use the media files within your project.
-
-Ideally, you should provide an actual link to every media file used, not just a generic link to the main site!
-The list below is by no means exhaustive. Within the Code Institute Slack community, you can find more "free media" links
-by sending yourself the following command: `!freemedia`.
-
-⚠️⚠️ EXAMPLE LINKS - REPLACE WITH YOUR OWN ⚠️⚠️
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
@@ -319,7 +305,7 @@ by sending yourself the following command: `!freemedia`.
 | [Reverb](https://rvb-img.reverb.com/image/upload/s--UnfJb080--/a_exif,c_limit,e_unsharp_mask:80,f_auto,fl_progressive,g_south,h_1600,q_80,w_1600/v1459200223/df61mcxwwunthem8u8mc.jpg) | question | image | Dave Mustaine guitar question |
 | [Guitar Village](https://guitarvillage.co.uk/wp-content/uploads/2022/10/Gibson-SG-Standard-61-Vintage-Cherry-030_01-compress.jpg) | question | image |  SG guitar question |
 | [Music Man](https://s3-us-west-2.amazonaws.com/static.music-man.com/website/images/instruments/instrument-1.png?1695268095) | question | image |  Music Man guitar question |
-| []() | question | image |  guitar question |
+| [The Music Emporium](https://themusicemporium.com/cdn/shop/files/FEN-CS58SCAR-1.jpg?v=1700854507) | README | image | 50's Stratocaster |
 | [Pintrest](https://i.pinimg.com/originals/7d/eb/dc/7debdcad8fea68ba6c57eb1e347d737d.png) | favicon | image | favicon |
 | [PNG Wing](https://w7.pngwing.com/pngs/369/305/png-transparent-musical-note-musical-theatre-double-whole-note-musical-note-photography-rectangle-monochrome-thumbnail.png) | all pages | image |  header logo |
 | [Super Coloring](https://www.supercoloring.com/sites/default/files/fif/2024/02/shape-of-electric-guitar-electric-guitar-1-paper-crafts.png) | all pages | image | header logo |
@@ -328,17 +314,7 @@ by sending yourself the following command: `!freemedia`.
 
 ### Acknowledgements
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to provide attribution to any supports that helped, encouraged, or supported you throughout the development stages of this project.
-A few examples have been provided below to give you some ideas.
-
-⚠️⚠️ EXAMPLES ONLY - REPLACE WITH YOUR OWN ⚠️⚠️
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
-- I would like to thank my partner (John/Jane), for believing in me, and allowing me to make this transition into software development.
-- I would like to thank my employer, for supporting me in my career development change towards becoming a software developer.
+- I would like to thank my partner (Lorna), for believing in me, and allowing me to make this transition into software development.
