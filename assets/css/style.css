@@ -227,6 +227,7 @@ header {
 #end-screen h2 {
     margin-top: auto;
     font-size: calc(16px + 2vh);
+    text-align: center;
 }
 
 #final-score {
@@ -407,10 +408,15 @@ footer a {
     #question>h3 {
         height: 40% ;
     }
+
 }
 
 /* Screens taller than 520px */
 @media screen and (min-height:520px) {
+
+    .error {
+        font-size: 2.7vh;
+    }
 
     #answers {
         height: 25%;
