@@ -111,7 +111,7 @@ function startGame() {
     questionImage.src = gameQuestions.imageSrc;
     if (gameQuestions.imageSrc === '') { // Removes alt attribute for non-image questions
         questionImage.alt = 'logo'; 
-        questionImage.src = 'assets/images/logo-trans.png'
+        questionImage.src = 'assets/images/logo-trans.png';
     } else {
         questionImage.alt = 'guitar'; // Adds alt attribute if image question
     }

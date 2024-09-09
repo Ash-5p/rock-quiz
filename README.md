@@ -1,5 +1,5 @@
-# ![image](assets/images/logo.png) 
-# (https://ash-5p.github.io/rock-quiz)
+# [![image](assets/images/logo.png)](https://ash-5p.github.io/rock-quiz)
+
 
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Ash-5p/rock-quiz)](https://github.com/Ash-5p/rock-quiz/commits/main)
 [![GitHub last commit](https://img.shields.io/github/last-commit/Ash-5p/rock-quiz)](https://github.com/Ash-5p/rock-quiz/commits/main)
