@@ -165,8 +165,8 @@ Defensive programming was manually tested with the below user acceptance testing
 | Page | Expectation | Test | Result | Fix | Screenshot (Before) | Screenshot (After)
 | --- | --- | --- | --- | --- | --- | --- |
 | Index | | | | | | |
-| | The "Play" button is expected to start a new game when the user clicks it | Tested the feature by clicking "Play" button | The feature behaved as expected, and it started a new game. This includes shuffling questions, reseting question index number, and resetting score & timer | Test concluded and passed | ![screenshot](documentation/features/feature01.png) | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature02.png) | |
+| | The "Play" button is expected to start a new game when the user clicks it. | Tested the feature by clicking "Play" button | The feature behaved as expected, and it started a new game. This includes shuffling questions, reseting question index number, and resetting score & timer | Test concluded and passed | ![screenshot](documentation/features/feature-home-btn.png) | ![screenshot](documentation/features/feature-new-game.png) |
+| | The "How to Play" button is expected to take the user to the "How to Play" screen when the user does clicks it. | Tested the feature by clicking the "How to Play" button | The feature behaved as expected and took the user to the "How to Play" screen. | Test concluded and passed | ![screenshot](documentation/features/feature-htp-btn.png) | ![screenshot](documentation/features/feature-instructions.png) |
 | 404 | | | | | | |
 | | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature03.png) | |
 | | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature04.png) | |
