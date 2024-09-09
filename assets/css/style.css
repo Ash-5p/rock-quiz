@@ -14,7 +14,7 @@ body {
     padding: 0;
     margin: 0;
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to bottom, #322b2bd4, #473535d4, #693c3cd4);
@@ -69,7 +69,7 @@ header {
 
     padding: 10px;
     margin: 0 20px;
-    height: 82vh;
+    height: 80vh;
     background-image: linear-gradient(to top, #322b2bd4, #473835d4, #694f3cd4, #86453ad4, #ab2d26d4, #d8290ad4);
     border-radius: 30px;
     box-shadow: black 2px 2px 2px 2px;
@@ -77,7 +77,6 @@ header {
     display: flex;
     flex-flow: column;
     overflow: hidden;
-    position: relative;
 }
 
 /* Home Screen */
@@ -102,34 +101,47 @@ header {
 
 /* How to Play Screen */
 
+.how-to {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
 .how-to ul {
     font-size: 1em;
     padding: 5px;
     overflow-y: auto;
-    max-height: 977px;
     list-style: none;
-    height: 45vh;
+    height: 70%;
+    text-align: center;
 }
 
 #back-btn {
-    position: absolute;
-    bottom: 0;
+    align-self: flex-start;
+    margin-top: auto;
 }
 
 /* Question Area */
 
 .img-box {
     display: flex;
-    height: 25%;
+    height: 40%;
     justify-content: center;
+    margin:auto;
 }
 
 .img-box img {
-    max-width: 260px;
     overflow: hidden;
     align-self: center;
     object-fit: contain;
     height: 100%;
+    max-width: 100%;
+}
+
+.fade {
+    opacity: 0.1;
 }
 
 .question>div {
@@ -141,12 +153,15 @@ header {
 }
 
 #question {
-    height: 65%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 #question>h3 {
     text-align: center;
-    height: 50%;
+    height: 45%;
     align-content: center;
     font-size: 16px;
     color: black;
@@ -317,44 +332,6 @@ footer a {
     #home-btn {
         font-size: calc(16px + 1.2vh);
     }
-
-    /* Screens wider than 425px and shorter than 400px */
-    @media screen and (max-height:400px) {
-
-        .ans-btn {
-            height: auto;
-        }
-
-        .ans-btn img {
-            margin-bottom: 30px;
-        }
-
-        #answers {
-            height: auto;
-            margin-top: auto;
-        }
-
-    }
-
-    /* Screens wider than 425px and taller than 600px */
-    @media screen and (min-height:600px) {
-
-        .how-to ul {
-            height: 65vh;
-        }
-
-        .ans-btn {
-            font-size: 22px;
-        }
-
-        .img-box img {
-            max-width: 550px;
-        }
-
-        #replay-btn {
-            max-height: 100px;
-        }
-    }
 }
 
 /* Screens wider than 768px */
@@ -369,7 +346,6 @@ footer a {
     }
 
     .how-to ul {
-        text-align: center;
         font-size: 20px;
     }
 
@@ -394,31 +370,10 @@ footer a {
     }
 }
 
-/* Screens taller than 480px */
-@media screen and (min-height:480px) {
-
-    .img-box {
-        height: 40%;
-    }
-
-    #question {
-        height: 75%;
-    }
-
-    #question>h3 {
-        height: 40% ;
-    }
-
-}
-
 /* Screens taller than 520px */
 @media screen and (min-height:520px) {
 
     .error {
         font-size: 2.7vh;
-    }
-
-    #answers {
-        height: 25%;
     }
 }
