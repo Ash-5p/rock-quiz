@@ -5,7 +5,7 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/Ash-5p/rock-quiz)](https://github.com/Ash-5p/rock-quiz/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/Ash-5p/rock-quiz)](https://github.com/Ash-5p/rock-quiz)
 
-This project is an interactive rock/guitar based quiz called "String Theory". It is intended to provide a fun, replayable experience to the user by offering a random selection of 10 questions from a possible 54. The quiz uses an unconventional scoring sytem, in which the player gains points equal to the amount of time left on the clock, further encouraging them to play again.
+This project is an interactive rock/guitar based quiz called "String Theory". It is intended to provide a fun, replayable experience to the user by offering a random selection of 10 questions from a possible 50+. The quiz uses an unconventional scoring sytem, in which the player gains points equal to the amount of time left on the clock, further encouraging them to play again.
 
 ![screenshot](documentation/readme/amiresponsive.png)
 
@@ -13,76 +13,26 @@ source: [amiresponsive](https://ui.dev/amiresponsive?url=https://ash-5p.github.i
 
 ## UX
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
-The color scheme of bright red and wheat is inspired by the appearence of a [vintage 50's Fender Stratocaster](documentation/readme/fender-strat.webp), and wheat coloring aims to emulate the yellowish color of old plastic like that seen on the pickups and tone/volume knobs. The 
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ### Colour Scheme
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
+The color scheme is inspired by the appearence of a [vintage 50's Fender Stratocaster](documentation/readme/fender-strat.webp), and wheat coloring aims to emulate the yellowish color of old plastic like that seen on the pickups and tone/volume knobs.
 
-Explain your colours and the colour scheme.
+- `#f5deb3` used for primary text.
+- `#d8290a` used for primary highlights.
+- `#00000f` used for secondary text.
+- `#322b2b` used for secondary highlights.
+- `#f5deb3` used for text background.
+- `#322b2b` used for navigation button background.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+I used [coolors.co](https://coolors.co/d8290a-00000f-f5deb3-322b2b) to generate my colour palette.
 
-- `#000000` used for primary text.
-- `#E84610` used for primary highlights.
-- `#4A4A4F` used for secondary text.
-- `#009FE3` used for secondary highlights.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
-Consider adding a link and screenshot for your colour scheme using "coolors".
-https://coolors.co/generate
-
-When you add a colour to the palette, the URL is dynamically updated, making it easier for you to return back to your colour palette later if needed.
-
-Example:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0-000000) to generate my colour palette.
-
-![screenshot](documentation/coolors.png)
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
-⚠️ ONLY IF YOU ACTUALLY ADDED `:root` variables in CSS! ⚠️
-If you've used CSS `:root` variables, consider also including a code snippet here!
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-I've used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
-
-```css
-:root {
-    /* P = Primary | S = Secondary */
-    --p-text: #000000;
-    --p-highlight: #E84610;
-    --s-text: #4A4A4F;
-    --s-highlight: #009FE3;
-    --white: #FFFFFF;
-    --black: #000000;
-}
-```
+![screenshot](documentation/readme/coolers.png)
 
 ### Typography
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
+- [RocknRoll One](https://fonts.google.com/specimen/RocknRoll+One) was used for the primary headers and titles.
 
-Explain any fonts and icon libraries used, like Google Fonts and/or Font Awesome.
-
-Consider adding a link to each font used, and the Font Awesome site if used (or similar icon library).
-
-Example:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-- [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
-
-- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
+- [New Rocker](https://fonts.google.com/specimen/New+Rocker) was used for all other secondary text.
 
 - [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
@@ -105,31 +55,94 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
 ### Existing Features
 
-- **YOUR-TITLE-FOR-FEATURE-#1**
+- **Header Logo**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The header logo acts as a link to the main page (index.html).
 
-![screenshot](documentation/features/feature01.png)
+![screenshot](documentation/readme/features/feature-header-logo.png)
 
-- **YOUR-TITLE-FOR-FEATURE-#2**
+- **Play Button**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The play button starts a new game when clicked.
 
-![screenshot](documentation/features/feature02.png)
+![screenshot](documentation/readme/features/feature-play-btn.png)
 
-- **YOUR-TITLE-FOR-FEATURE-#3**
+- **How to Play Button**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The "How to Play" button will take the user to the "How to Play" screen which explains the game mechanics.
 
-![screenshot](documentation/features/feature03.png)
+![screenshot](documentation/readme/features/feature-htp-btn.png)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
+- **Home Button**
 
-Repeat as necessary for as many features as your site contains.
+    - The home button allows the player to navigate back to the home screen at any point during the quiz. Effectively acting as a quit game feature.
 
-Hint: the more, the merrier!
+![screenshot](documentation/readme/features/feature-home-btn.png)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+- **Next Button**
+
+    - The next button is used to navigate to the next question once an answer has been selected, or the timer has reached 0. The button will remain disabled until either of these pre-requisites is achieved.
+
+![screenshot](documentation/readme/features/feature-next-btn-disabled.png) ![screenshot](documentation/readme/features/feature-next-btn-active.png)
+
+- **Replay Button**
+
+    - The replay button is used to navigate back to the main menu from the final score screen.
+
+![screenshot](documentation/readme/features/feature-replay-btn.png)
+
+- **Answer Buttons**
+
+    - The answer buttons are used by the user as the means to select their answer. Upon selecting an answer, the buttons will change color to indicate a right (green) or wrong (red) answer.
+
+![screenshot](documentation/readme/features/feature-answer-btns-before.png)![screenshot](documentation/readme/features/feature-answer-btns-after.png)
+
+- **How to Play Screen**
+
+    - The "How to Play" screen explained the game mechanics to the user. It also offers a scroll bar for smaller screens which cannot fit all of the text on screen in order to avoid having the text be too small. 
+
+![screenshot](documentation/readme/features/feature-htp-screen.png)
+
+- **Questions**
+
+    - Each question is a multiple choice format, offering 4 choices. A total of 10 random questions out of an array of 50+ will be presented to the player before the game ends. The quiz features a selection of image and non-image questions.
+
+![screenshot](documentation/readme/features/feature-question.png)
+![screenshot](documentation/readme/features/feature-image-question.png)
+
+- **Timer**
+
+    - The timer will count down from 20 seconds at the start of each new question. When the timer reaches 0, the correct answer will be revealed and the answer buttons will be disabled.
+
+![screenshot](documentation/readme/features/feature-timer.png)
+
+- **Score**
+
+    - There are 3 actions which affect the game score:
+        - A correct answer will increase the player's score by the amount of seconds left on the timer.
+        - An incorrect answer will result in a 10 point penalty to the player's score.
+        - The timer reaching 0 will result in a 5 point penalty to the player's score.
+
+![screenshot](documentation/readme/features/feature-score.png)
+
+- **Final Score Screen**
+
+    - The final score screen will appear after question 10, and will display the player's final score. 
+
+![screenshot](documentation/readme/features/feature-end-score.png)
+
+- **Social Media Links**
+
+    - The social media links in the footer on all pages will navigate to one of my corrisponding social media accounts. These will open in a new tab due to being external links.
+
+![screenshot](documentation/readme/features/feature-socials.png)
+
+- **Error 404 Page**
+
+    - The 404 page will appear if there is an issue with the page address in the url bar. This will offer instructions/suggestions on how to get back to the main page.
+
+![screenshot](documentation/readme/features/feature-404.png)
+
 
 ### Future Features
 
@@ -142,12 +155,12 @@ Consider adding any helpful links or notes to help remind you in the future, if 
 
 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
-- YOUR-TITLE-FOR-FUTURE-FEATURE-#1
-    - Any additional notes about this feature.
-- YOUR-TITLE-FOR-FUTURE-FEATURE-#2
-    - Any additional notes about this feature.
-- YOUR-TITLE-FOR-FUTURE-FEATURE-#3
-    - Any additional notes about this feature.
+- Timer Progress Bar
+    - I plan to replace the numbered countdown with a depleating timer bar.
+- Audio Questions
+    - Audio questions will offer a soundbite with a question based of the audio. The user will have to click to play the audio, and the timer will not start until the user has done this.
+- Game Modes
+    - Audio questions/ Standard Questions/ Image Questions/ Mixed Questions/ Time attack mode
 
 ## Tools & Technologies Used
 
@@ -163,40 +176,15 @@ Feel free to delete any unused items below as necessary.
 - [![Markdown Builder](https://img.shields.io/badge/Markdown_Builder-grey?logo=markdown&logoColor=000000)](https://tim.2bn.dev/markdown-builder) used to generate README and TESTING templates.
 - [![Git](https://img.shields.io/badge/Git-grey?logo=git&logoColor=F05032)](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [![GitHub](https://img.shields.io/badge/GitHub-grey?logo=github&logoColor=181717)](https://github.com) used for secure online code storage.
-- ⚠️⚠️ IDE: CHOOSE ONLY ONE <-- delete me ⚠️⚠️
 - [![Gitpod](https://img.shields.io/badge/Gitpod-grey?logo=gitpod&logoColor=FFAE33)](https://gitpod.io) used as a cloud-based IDE for development.
-- ⚠️⚠️ LANGUAGES: CHOOSE ALL APPLICABLE <-- delete me ⚠️⚠️
 - [![HTML](https://img.shields.io/badge/HTML-grey?logo=html5&logoColor=E34F26)](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [![CSS](https://img.shields.io/badge/CSS-grey?logo=css3&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
-- [![JavaScript](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com) used for user interaction on the site.
-- [![jQuery](https://img.shields.io/badge/jQuery-grey?logo=jquery&logoColor=0769AD)](https://jquery.com) used for user interaction on the site.
-- ⚠️⚠️ DEPLOYMENT: CHOOSE ONLY ONE <-- delete me ⚠️⚠️
+- [![JavaScript](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com) used for user interaction on the site..
 - [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-grey?logo=githubpages&logoColor=222222)](https://pages.github.com) used for hosting the deployed front-end site.
-- ⚠️⚠️ CSS FRAMEWORKS: CHOOSE ONLY ONE (if applicable) <-- delete me ⚠️⚠️
 - [![Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- ⚠️⚠️ MISCELLANEOUS: CHOOSE ALL APPLICABLE <-- delete me ⚠️⚠️
-- [![Google Sheets](https://img.shields.io/badge/Google_Sheets-grey?logo=googlesheets&logoColor=34A853)](https://docs.google.com/spreadsheets) used for storing data from my Python app.
-- [![Jest](https://img.shields.io/badge/Jest-grey?logo=jest&logoColor=c21325)](https://jestjs.io) used for automated JavaScript testing.
-- [![Flask](https://img.shields.io/badge/Flask-grey?logo=flask&logoColor=000000)](https://flask.palletsprojects.com) used as the Python framework for the site.
-- [![MongoDB](https://img.shields.io/badge/MongoDB-grey?logo=mongodb&logoColor=47A248)](https://www.mongodb.com) used as the non-relational database management with Flask.
-- [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-grey?logo=sqlalchemy&logoColor=D71F00)](https://www.sqlalchemy.org) used as the relational database management with Flask.
-- [![Django](https://img.shields.io/badge/Django-grey?logo=django&logoColor=092E20)](https://www.djangoproject.com) used as the Python framework for the site.
-- [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-grey?logo=postgresql&logoColor=4169E1)](https://www.postgresql.org) used as the relational database management.
-- [![PostgreSQL by Code Institute](https://img.shields.io/badge/PostgreSQL_by_Code_Institute-grey?logo=okta&logoColor=F05223)](https://dbs.ci-dbs.net) used as the Postgres database from Code Institute.
-- [![ElephantSQL](https://img.shields.io/badge/ElephantSQL-grey?logo=postgresql&logoColor=36A6E2)](https://www.elephantsql.com) used as the Postgres database.
-- [![Cloudinary](https://img.shields.io/badge/Cloudinary-grey?logo=cloudinary&logoColor=3448C5)](https://cloudinary.com) used for online static file storage.
-- [![WhiteNoise](https://img.shields.io/badge/WhiteNoise-grey?logo=python&logoColor=FFFFFF)](https://whitenoise.readthedocs.io) used for serving static files with Heroku.
-- [![Stripe](https://img.shields.io/badge/Stripe-grey?logo=stripe&logoColor=008CDD)](https://stripe.com) used for online secure payments of ecommerce products/services.
-- [![Gmail API](https://img.shields.io/badge/Gmail_API-grey?logo=gmail&logoColor=EA4335)](https://mail.google.com) used for sending emails in my application.
-- [![MailChimp](https://img.shields.io/badge/MailChimp-grey?logo=mailchimp&logoColor=FFE01B)](https://mailchimp.com) used for sending newsletter subscriptions.
-- [![AWS S3](https://img.shields.io/badge/AWS_S3-grey?logo=amazons3&logoColor=569A31)](https://aws.amazon.com/s3) used for online static file storage.
 - [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes) used for creating wireframes.
-- [![Figma](https://img.shields.io/badge/Figma-grey?logo=figma&logoColor=F24E1E)](https://www.figma.com) used for creating wireframes.
-- [![Canva](https://img.shields.io/badge/Canva-grey?logo=canva&logoColor=00C4CC)](https://www.canva.com/p/canvawireframes) used for creating wireframes.
-- [![Google Maps API](https://img.shields.io/badge/Google_Maps_API-grey?logo=googlemaps&logoColor=4285F4)](https://developers.google.com/maps) used as an interactive map on my site.
-- [![Leaflet](https://img.shields.io/badge/Leaflet-grey?logo=leaflet&logoColor=199900)](https://leafletjs.com) used as a free open-source interactive map on my site.
 - [![Font Awesome](https://img.shields.io/badge/Font_Awesome-grey?logo=fontawesome&logoColor=528DD7)](https://fontawesome.com) used for the icons.
-- [![ChatGPT](https://img.shields.io/badge/ChatGPT-grey?logo=chromatic&logoColor=75A99C)](https://chat.openai.com) used to help debug, troubleshoot, and explain things.
+- [![ChatGPT](https://img.shields.io/badge/ChatGPT-grey?logo=chromatic&logoColor=75A99C)](https://chat.openai.com) used to help debug, troubleshoot, and explain things. used to generate non-image questions
 
 ## Testing
 
@@ -248,42 +236,16 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on GitHub Pages.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+There are no notable differences between the local and deployed site.
 
 ## Credits
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-In this section you need to reference where you got your content, media, and extra help from.
-It is common practice to use code from other repositories and tutorials,
-however, it is important to be very specific about these sources to avoid plagiarism.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ### Content
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to provide attribution links to any borrowed code snippets, elements, or resources.
-A few examples have been provided below to give you some ideas.
-
-Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
-
-⚠️⚠️ EXAMPLE LINKS - REPLACE WITH YOUR OWN ⚠️⚠️
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
 | [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
-| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
-| [Flexbox Froggy](https://flexboxfroggy.com/) | entire site | modern responsive layouts |
-| [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
 | [Web Dev Simplified](https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js#L17C2-L18C27) | scripts.js | shuffle questions |
 | [Web Dev Simplified](https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js#L24C1-L25C56) | scripts.js | nextQuestion function |
 | [Web Dev Simplified](https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js#L45C1-L46C70) | scripts.js | resetState function |

@@ -73,7 +73,7 @@ header {
     height: 95vh;
     background-image: linear-gradient(to top, #322b2bd4, #473835d4, #694f3cd4, #86453ad4, #ab2d26d4, #d8290ad4);
     border-radius: 30px;
-    border: black 2px solid;
+    border: #00000f 2px solid;
     box-shadow: 2px 2px 10px #00000f;
     max-width: 1024px;
     display: flex;
@@ -162,9 +162,9 @@ header {
     height: 45%;
     align-content: center;
     font-size: 16px;
-    color: black;
+    color: #00000f;
     background-color: #F5DEB3;
-    border: black 2px solid;
+    border: #00000f 2px solid;
     box-shadow: 2px 2px 10px #00000f;
     border-radius: 1.5em;
 }
@@ -184,7 +184,7 @@ header {
     border-radius: 10px;
     padding: 0 9px;
     box-shadow: 2px 2px 10px #00000f;
-    border: black 2px solid;
+    border: #00000f 2px solid;
 }
 
 
@@ -194,7 +194,7 @@ header {
     background-color: wheat;
     color: #322b2bd4;
     border-radius: 10px;
-    border: black 2px solid;
+    border: #00000f 2px solid;
     padding: 2px 5px;
     box-shadow: 2px 2px 10px #00000f;
     height: 100%;
