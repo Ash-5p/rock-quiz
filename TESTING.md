@@ -3,49 +3,6 @@
 > [!NOTE]  
 > Return back to the [README.md](README.md) file.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-In this section, you need to convince the assessors that you have conducted enough testing to legitimately believe that the site works well.
-Essentially, in this part, you should go over all of your project's features, and ensure that they all work as intended,
-with the project providing an easy and straightforward way for the users to achieve their goals.
-
-Feature-by-Feature Testing:
-
-Go through each feature of your portfolio site and detail the testing process for each.
-
-Explain the functionality and demonstrate how it aligns with the intended purpose. This could include:
-
-- Navigation: Ensuring smooth transitions between pages, links directing to the correct destinations.
-- Responsive Design: Checking for compatibility across various devices and screen sizes.
-- Portfolio Display: Verifying that projects are properly showcased with accurate descriptions, images, and links.
-- Contact Form: Testing the form submission process, ensuring the user receives a confirmation, and you receive the message.
-
-User Experience Testing:
-
-- Usability Testing: Have users (or simulated users) interact with the site and provide feedback. Document any issues encountered and the resolutions implemented.
-- Accessibility Testing: Confirm compliance with accessibility standards (e.g., screen reader compatibility, proper alt text for images, keyboard navigation).
-
-Compatibility Testing:
-
-- Browser Compatibility: Testing on different browsers (Chrome, Firefox, Safari, Edge, etc.) to ensure consistent performance.
-- Device Compatibility: Ensuring functionality across various devices (desktops, laptops, tablets, and mobile phones).
-- Performance Testing (optional):
-	- Speed and Load Testing: Tools like PageSpeed Insights or GTmetrix to check page load times and optimize where necessary.
-	- Scalability Testing: Assess how the site handles increased traffic or usage.
-
-Regression Testing:
-
-After implementing fixes or updates, ensure that previous features and functionalities still work as intended. This prevents new changes from breaking existing features.
-
-Documentation and Logs:
-
-Maintain records of testing procedures, results, and any bugs encountered along with their resolutions. This helps demonstrate a systematic approach to testing and problem-solving.
-User Feedback Incorporation:
-
-If applicable, mention how user feedback has been taken into account and implemented to enhance the user experience.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ## Code Validation
 
 ### HTML
@@ -107,123 +64,33 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 ## Defensive Programming
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Defensive programming (defensive design) is extremely important!
-
-When building projects that accept user inputs or forms, you should always test the level of security for each.
-Examples of this could include (not limited to):
-
-Forms:
-- Users cannot submit an empty form
-- Users must enter valid email addresses
-
-PP3 (Python-only):
-- Users must enter a valid letter/word/string when prompted
-- Users must choose from a specific list only
-
-MS3 (Flask) | MS4/PP4/PP5 (Django):
-- Users cannot brute-force a URL to navigate to a restricted page
-- Users cannot perform CRUD functionality while logged-out
-- User-A should not be able to manipulate data belonging to User-B, or vice versa
-- Non-Authenticated users should not be able to access pages that require authentication
-- Standard users should not be able to access pages intended for superusers
-
-You'll want to test all functionality on your application, whether it's a standard form,
-or uses CRUD functionality for data manipulation on a database.
-Make sure to include the `required` attribute on any form-fields that should be mandatory.
-Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
-
-You should include any manual tests performed, and the expected results/outcome.
-
-Testing should be replicable.
-Ideally, tests cases should focus on each individual section of every page on the website.
-Each test case should be specific, objective, and step-wise replicable.
-
-Instead of adding a general overview saying that everything works fine,
-consider documenting tests on each element of the page
-(ie. button clicks, input box validation, navigation links, etc.) by testing them in their happy flow,
-and also the bad/exception flow, mentioning the expected and observed results,
-and drawing a parallel between them where applicable.
-
-Consider using the following format for manual test cases:
-
-Expected Outcome / Test Performed / Result Received / Fixes Implemented
-
-- **Expected**: "Feature is expected to do X when the user does Y."
-- **Testing**: "Tested the feature by doing Y."
-- (either) **Result**: "The feature behaved as expected, and it did Y."
-- (or) **Result**: "The feature did not respond to A, B, or C."
-- **Fix**: "I did Z to the code because something was missing."
-
-Use the table below as a basic start, and expand on it using the logic above.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 Defensive programming was manually tested with the below user acceptance testing:
 
 | Page | Expectation | Test | Result | Fix | Screenshot (Before) | Screenshot (After)
 | --- | --- | --- | --- | --- | --- | --- |
 | Index | | | | | | |
-| | The "Play" button is expected to start a new game when the user clicks it. | Tested the feature by clicking "Play" button | The feature behaved as expected, and it started a new game. This includes shuffling questions, reseting question index number, and resetting score & timer | Test concluded and passed | ![screenshot](documentation/features/feature-home-btn.png) | ![screenshot](documentation/features/feature-new-game.png) |
-| | The "How to Play" button is expected to take the user to the "How to Play" screen when the user does clicks it. | Tested the feature by clicking the "How to Play" button | The feature behaved as expected and took the user to the "How to Play" screen. | Test concluded and passed | ![screenshot](documentation/features/feature-htp-btn.png) | ![screenshot](documentation/features/feature-instructions.png) |
+| | The "Play" button is expected to start a new game when the user clicks it. | Tested the feature by clicking "Play" button | The feature behaved as expected, and it started a new game. This includes shuffling questions, reseting question index number, and resetting score & timer | Test concluded and passed | ![screenshot](documentation/features/feature-play-btn.png) | ![screenshot](documentation/features/feature-new-game.png) |
+| | The "How to Play" button is expected to take the user to the "How to Play" screen when the user clicks it. | Tested the feature by clicking the "How to Play" button | The feature behaved as expected and took the user to the "How to Play" screen. | Test concluded and passed | ![screenshot](documentation/features/feature-htp-btn.png) | ![screenshot](documentation/features/feature-instructions-scrollbar.png) |
+| | The "How to Play" Screen is expected to add a vertical scroll feature within the game area for screens which are too small to fit the whole block of text. | Tested the feature by observing the  | The feature behaved as expected and the final score screen was shown after the 10th question each time, displaying the correct player score. | Test concluded and passed | ![screenshot](documentation/features/feature-last-question.png) | ![screenshot](documentation/features/feature-final-score.png) |
+| | The "Back" button is expected to take the user to the back to the homescreen when the user clicks it. | Tested the feature by clicking the "Back" button | The feature behaved as expected and took the user back to the homescreen. | Test concluded and passed | ![screenshot](documentation/features/feature-instructions-back-btn.png) | ![screenshot](documentation/features/feature-homescreen.png) |
+| | The "Home" button is expected to take the user back to the homescreen when the user clicks it. | Tested the feature by clicking the "Home"" button | The feature behaved as expected and took the user to the homescreen. | Test concluded and passed | ![screenshot](documentation/features/feature-home-btn.png) | ![screenshot](documentation/features/feature-homescreen.png) |
+| | The "Replay" button is expected to take the user back to the homescreen when the user clicks it. | Tested the feature by clicking the "Replay"" button | The feature behaved as expected and took the user to the homescreen. | Test concluded and passed | ![screenshot](documentation/features/feature-replay-btn.png) | ![screenshot](documentation/features/feature-homescreen.png) |
+| | The question shuffle feature is expected to randomly pull 10 questions from an array of 50+ possible questions each time a new game is started. | Tested the feature by playing through the quiz multiple multiple times to ensure questions were totally random. | The feature behaved as expected and 10/50+ questions appear in a random order each time the game is played. | Test concluded and passed | ![screenshot](documentation/features/feature-shuffle-questions-1.png) | ![screenshot](documentation/features/feature-shuffle-questions-2.png) |
+| | The "Next" button is expected to take the user to the next question when the user clicks it. | Tested the feature by clicking the "Home"" button | The feature behaved as expected and took the user to the next question. | Test concluded and passed | ![screenshot](documentation/features/feature-next-btn-before.png) | ![screenshot](documentation/features/feature-next-btn-after.png) |
+| | The "Next" button is expected to be disabled (and faded out) at the start of a new question, until the timer runs out or the user selects an answer. | Tested the feature by clicking the "Next" button before selecting an answer or allowing the timer to run out. Then reapeated the test once the timer had run out and repeated test by selecting an answer. | The feature behaved as expected and did not allow the user to interact with it until either pre-requesit had been achieved. | Test concluded and passed | ![screenshot](documentation/features/feature-next-btn-after.png) | ![screenshot](documentation/features/feature-next-btn-functional.png) |
+| | The answer buttons are expected to change red/green when an answer is selected in order to indicate a right (green) or wrong (red) answer. Upon selecting an answer, all of the answer buttons will be disabled in order to prevent further input | Tested the feature by clicking one of the answer buttons to see if they change to the correct color, then tried to click each answer again to check that the buttons were disabled | The feature behaved as expected and the correct answer turned green, while the incorrect answers turned red. All buttons were disabled | Test concluded and passed | ![screenshot](documentation/features/feature-answer-btns-before.png) | ![screenshot](documentation/features/feature-answer-btns-after.png) |
+| | The player score is expected to increase by the number of seconds remaining on the clock when the timer when the player selects the correct answer. | Tested the feature by selecting the correct answer while the timer was at a few different values. | The feature behaved as expected and added points to the player score equivelant to the remaing time. | Test concluded and passed | ![screenshot](documentation/features/feature-correct-answer-before.png) | ![screenshot](documentation/features/feature-correct-answer-after.png) |
+| | The player score is expected to decrease by the 10 points when the user selects an incorrect answer. | Tested the feature by selecting an incorrect answer (while having 10 or more points already). | The feature behaved as expected and reduced the player score by 10. | Test concluded and passed | ![screenshot](documentation/features/feature-wrong-answer-before.png) | ![screenshot](documentation/features/feature-wrong-answer-after.png) |
+| | The player score is expected to never become a negative value. Therefore when incurring a point penalty (timeout or incorrect answer) when the player score is less than the penalty value, the player score will reduce to 0. | Tested the feature by allowing the timer to run out while the player score was 0. | The feature behaved as expected did not reduce the score to a negative value. | Test concluded and passed | ![screenshot](documentation/features/feature-score-0-before.png) | ![screenshot](documentation/features/feature-score-0-after.png) |
+| | The timer is expected to start a 20 second countdown at the start of each question. | Tested the feature by starting a new game to see if the timer started at 20 seconds, then moved to next question to check that the timer had reset. | The feature behaved as expected and started at 20 seconds for each new question. | Test concluded and passed | ![screenshot](documentation/features/feature-timer-20-before.png) | ![screenshot](documentation/features/feature-timer-20-after.png) |
+| | The timer is expected to stop when an answer is selected. | Tested the feature by selecting an answer. | The feature behaved as expected and the timer stopped when an answer was clicked. | Test concluded and passed | ![screenshot](documentation/features/feature-wrong-answer-before.png) | ![screenshot](documentation/features/feature-wrong-answer-after.png) |
+| | The timer is expected to stop when it reaches 0. | Tested the feature by letting the timer run out. | The feature did not behave as expected, and proceeded to count negative numbers. | I had to add the following line of code to script.js: `clearInterval(timerInterval);` Timer now works as expected. Test concluded and passed | ![screenshot](documentation/bugs/bug-timer.png) | |
+| | The final score screen is expected to appear when the user clicks the "Next" button after 10 questions. It will display the players final score. | Tested the feature by answering 10 questions. Repeated x3 | The feature behaved as expected and the final score screen was shown after the 10th question each time, displaying the correct player score. | Test concluded and passed | ![screenshot](documentation/features/feature-last-question.png) | ![screenshot](documentation/features/feature-final-score.png) |
 | 404 | | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature03.png) | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature04.png) | |
+| | The homepage link is take the user back to the home screen on index.html when clicked | Tested the feature by clicking the link | The feature behaved as expected, navigated to the home screen | Test concluded and passed | ![screenshot](documentation/features/feature-404-homepage-link.png) |![screenshot](documentation/features/feature-homescreen.png)|
 | All Pages | | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature05.png) | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature06.png) | |
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Another way of performing defensive testing is a simple Pass/Fail for each test.
-The assessors prefer the above method, with the full test explained, but this is also acceptable in most cases.
-
-When in doubt, use the above method instead, and delete the table below.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-| Page | User Action | Expected Result | Pass/Fail | Comments |
-| --- | --- | --- | --- | --- |
-| Home | | | | |
-| | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
-| Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password (twice) | Field will only accept password format | Pass | |
-| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
-| | Confirm email | Redirects user to blank Sign In page | Pass | |
-| Log In | | | | |
-| | Click on the Login link | Redirection to Login page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password | Field will only accept password format | Pass | |
-| | Click Login button | Redirects user to home page | Pass | |
-| Log Out | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Profile | | | | |
-| | Click on Profile button | User will be redirected to the Profile page | Pass | |
-| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
-| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
-| repeat for all remaining pages | x | x | x | x |
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+| | The header logo is expected to navigate to the home screen when clicked | Tested the feature by clicking the header logo | The feature behaved as expected, and navigated to home screen | Test concluded and passed | ![screenshot](documentation/features/feature-header-logo.png) |![screenshot](documentation/features/feature-homescreen.png) |
+| | The social media links are expected to navigate to my corresponding social media profile in a new tab| Tested the feature by clicking both links to make sure each opened in a new tab, and navigated to the correct url | The feature behaved as expected, and opened each corresponding link in a new tab. | Test concluded and passed | ![screenshot](documentation/features/feature-socials.png) | ![screenshot](documentation/features/feature-fb.png) ![screenshot](documentation/features/feature-li.png)|
 
 ## Bugs
 
@@ -239,35 +106,17 @@ Make sure to include any necessary steps you've implemented to fix the bug(s) as
 
 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
-- JS Uncaught ReferenceError: `foobar` is undefined/not defined
+- JS Negative timer: Timer carried on past 0, and would increase in speed every time the game state was reset.
 
-    ![screenshot](documentation/bugs/bug01.png)
+    ![screenshot](documentation/bugs/bug-timer.png)
 
-    - To fix this, I _____________________.
+    - To fix this, I added `clearInterval(timerInterval);` to lines 145, 218 & 228.
 
-- JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).
+- JS Negative score: Score would drop to a negative number if the player score was less than the penalty incurred
 
-    ![screenshot](documentation/bugs/bug02.png)
+    ![screenshot](documentation/bugs/bug-negative-score.png)
 
-    - To fix this, I _____________________.
-
-- Python `'ModuleNotFoundError'` when trying to import module from imported package
-
-    ![screenshot](documentation/bugs/bug03.png)
-
-    - To fix this, I _____________________.
-
-- Django `TemplateDoesNotExist` at /appname/path appname/template_name.html
-
-    ![screenshot](documentation/bugs/bug04.png)
-
-    - To fix this, I _____________________.
-
-- Python `E501 line too long` (93 > 79 characters)
-
-    ![screenshot](documentation/bugs/bug04.png)
-
-    - To fix this, I _____________________.
+    - To fix this, I added `if` statements to `checkAnswers()` & `timeout()` functions which would call the `resetState()` function if the player score was less than respective point penalty, returning the score to 0.
 
 ## Unfixed Bugs
 
