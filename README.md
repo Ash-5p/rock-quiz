@@ -38,21 +38,6 @@ I used [coolors.co](https://coolors.co/d8290a-00000f-f5deb3-322b2b) to generate 
 
 ## Features
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ### Existing Features
 
 - **Header Logo**
@@ -146,15 +131,6 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
 ### Future Features
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 - Timer Progress Bar
     - I plan to replace the numbered countdown with a depleating timer bar.
 - Audio Questions
@@ -163,15 +139,6 @@ Consider adding any helpful links or notes to help remind you in the future, if 
     - Audio questions/ Standard Questions/ Image Questions/ Mixed Questions/ Time attack mode
 
 ## Tools & Technologies Used
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-In this section, you should explain the various tools and technologies used to develop the project.
-Make sure to put a link (where applicable) to the source, and explain what each was used for.
-Some examples have been provided, but this is just a sample only, your project might've used others.
-Feel free to delete any unused items below as necessary.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 - [![Markdown Builder](https://img.shields.io/badge/Markdown_Builder-grey?logo=markdown&logoColor=000000)](https://tim.2bn.dev/markdown-builder) used to generate README and TESTING templates.
 - [![Git](https://img.shields.io/badge/Git-grey?logo=git&logoColor=F05032)](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
@@ -251,7 +218,6 @@ There are no notable differences between the local and deployed site.
 | [Web Dev Simplified](https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js#L45C1-L46C70) | scripts.js | resetState function |
 | [Web Dev Simplified](https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js#L54C1-L55C51) | scripts.js | selectAnswer function |
 | [Web Dev Simplified](https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js#L65C1-L77C2) | scripts.js | clearStatusClass & setStatusClass functions |
-
 
 
 ### Media
