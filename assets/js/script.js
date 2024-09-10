@@ -107,7 +107,7 @@ function startGame() {
   * Function to display a random question from gameQuestion array 
   */
  function showQuestion(gameQuestions) {
-    questionElement.textContent = gameQuestions.question;
+    questionElement.textContent = `Q${currentQuestionIndex + 1}. ${gameQuestions.question}`;
     questionImage.src = gameQuestions.imageSrc;
     if (gameQuestions.imageSrc === '') { // Removes alt attribute for non-image questions
         questionImage.alt = 'logo'; 
