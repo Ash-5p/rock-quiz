@@ -18,7 +18,6 @@ body {
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to bottom, #322b2bd4, #473535d4, #693c3cd4);
-    /* Borrowed from Blurty images source code */
     color: #F5DEB3;
     font-family: "RocknRoll One", sans-serif;
     font-weight: 400;
